@@ -8,14 +8,20 @@ public class MainWindow extends Window {
         super(programContext);
     }
 
+    @Override
     public int Run() {
         MenuUtils.printWindow("BankingStack", new String[] {
                 "Welcome to BankingStack",
                 "",
                 "#l1. Login",
-                "#l2. Register",
-                "#l3. Admin",
-                "#l4. Sair",
+                "#l2. Create user",
+                "#l3. Create account",
+                "#l4. List users",
+                "#l5. List accounts",
+                "#l6. List user accounts",
+                "#l7. Delete user",
+                "#l8. Close account",
+                "#l9. Exit",
                 "",
         }, "Enter one of the options above");
         int option = programContext.getConsoleScanner().nextInt();
@@ -24,10 +30,11 @@ public class MainWindow extends Window {
                 new LoginWindow(this.programContext).Run();
                 break;
             case 2:
+                new CreateUserWindow(this.programContext).Run();
                 break;
             case 3:
                 break;
-            case 4:
+            case 9:
                 this.programContext.Exit();
                 break;
             default:

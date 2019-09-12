@@ -24,6 +24,16 @@ public class User {
         this.accounts = new ArrayList<>();
     }
 
+    public User(int userID) {
+        this.userID = userID;
+        this.firstName = "";
+        this.lastName = "";
+        this.phone = "";
+        this.cpf = "";
+        this.password = "";
+        this.accounts = new ArrayList<>();
+    }
+
     public int getUserID() {
         return this.userID;
     }
@@ -42,7 +52,7 @@ public class User {
     }
 
     public boolean setLastName(String newLastName) {
-        this.firstName = newLastName;
+        this.lastName = newLastName;
         return true;
     }
 
@@ -52,7 +62,7 @@ public class User {
 
     public boolean setPhone(String newPhone) {
         if(!newPhone.matches("\\(?\\+[0-9]{1,3}\\)? ?-?[0-9]{1,3} ?-?[0-9]{3,5} ?-?[0-9]{4}( ?-?[0-9]{3})?")) return false;
-        this.firstName = newPhone;
+        this.phone = newPhone;
         return true;
     }
 
@@ -69,6 +79,10 @@ public class User {
 
     public boolean comparePasswords(String compPassword) {
         return this.password.equals(compPassword);
+    }
+
+    public String getPassword() {
+        return this.password;
     }
 
     public void setPassword(String newPassword) {

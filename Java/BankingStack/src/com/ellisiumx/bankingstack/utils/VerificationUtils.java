@@ -8,18 +8,16 @@ public class VerificationUtils {
         for(int i = 0; i < 9; i++) {
             checkDigit += cpfNumbers[i] * (10 - i);
         }
-        checkDigit = checkDigit / 11;
-        if(checkDigit <= 1) checkDigit = 0;
-        else checkDigit = 11 - checkDigit;
+        checkDigit = (checkDigit * 10) % 11;
+        if(checkDigit == 10) checkDigit = 0;
         if(checkDigit != cpfNumbers[9]) return false;
 
         checkDigit = 0;
         for(int i = 0; i < 10; i++) {
             checkDigit += cpfNumbers[i] * (11 - i);
         }
-        checkDigit = checkDigit / 11;
-        if(checkDigit <= 1) checkDigit = 0;
-        else checkDigit = 11 - checkDigit;
+        checkDigit = (checkDigit * 10) % 11;
+        if(checkDigit == 10) checkDigit = 0;
         if(checkDigit != cpfNumbers[10]) return false;
         return true;
     }

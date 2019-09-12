@@ -3,18 +3,23 @@ package com.ellisiumx.bankingstack.model;
 import com.ellisiumx.bankingstack.utils.VerificationUtils;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Account {
     private int accountID;
     private User user;
-    private LocalDateTime creationDate;
+    private Date creationDate;
     private double balance;
 
-    public Account(int accountID, User user, LocalDateTime creationDate) {
+    public Account(int accountID, User user, Date creationDate) {
+        this(accountID, user, creationDate, 0d);
+    }
+
+    public Account(int accountID, User user, Date creationDate, double balance) {
         this.accountID = accountID;
         this.user = user;
         this.creationDate = creationDate;
-        this.balance = 0;
+        this.balance = balance;
     }
 
     public int getAccountID() {
@@ -23,7 +28,7 @@ public class Account {
 
     public User getUser() { return this.user; }
 
-    public LocalDateTime getCreationDate() { return this.creationDate; }
+    public Date getCreationDate() { return this.creationDate; }
 
     public double getBalance() {
         return this.balance;

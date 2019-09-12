@@ -2,13 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b905da86-33a0-4d5a-87c6-06bd4c55d3b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/model/SpecialAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/manager/DatabaseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/windows/CreateUserWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/model/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/model/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/model/SpecialAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/model/SpecialAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/ConversionUtils$IntConversionResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/ConversionUtils$IntConversionResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/ConversionUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/ConversionUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/EncryptionUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/EncryptionUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$StringDirection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$StringDirection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/VerificationUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/VerificationUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/windows/LoginWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/windows/LoginWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/windows/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/windows/MainWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/windows/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/windows/Window.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/model/SpecialAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/model/SpecialAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/utils/VerificationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/utils/VerificationUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/windows/LoginWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/windows/LoginWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/windows/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/windows/MainWindow.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,6 +109,7 @@
       <workItem from="1568204091631" duration="6689000" />
       <workItem from="1568270155713" duration="40000" />
       <workItem from="1568270271532" duration="6269000" />
+      <workItem from="1568289934007" duration="9832000" />
     </task>
     <servers />
   </component>
