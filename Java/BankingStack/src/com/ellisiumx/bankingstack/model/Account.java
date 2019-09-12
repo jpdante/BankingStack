@@ -2,24 +2,18 @@ package com.ellisiumx.bankingstack.model;
 
 import com.ellisiumx.bankingstack.utils.VerificationUtils;
 
+import java.time.LocalDateTime;
+
 public class Account {
     private int accountID;
-    private int branchID;
-    private String firstName;
-    private String lastName;
-    private String phone;
-    private String cpf;
-    private String password;
+    private User user;
+    private LocalDateTime creationDate;
     private double balance;
 
-    public Account(int accountID, int branchID, String firstName, String lastName, String phone, String cpf, String password) {
+    public Account(int accountID, User user, LocalDateTime creationDate) {
         this.accountID = accountID;
-        this.branchID = branchID;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phone = phone;
-        this.cpf = cpf;
-        this.password = password;
+        this.user = user;
+        this.creationDate = creationDate;
         this.balance = 0;
     }
 
@@ -27,65 +21,17 @@ public class Account {
         return this.accountID;
     }
 
-    public int getBranchID() {
-        return this.branchID;
-    }
+    public User getUser() { return this.user; }
 
-    public boolean setBranchID(int newID) {
-        if(newID <= 0) return false;
-        this.branchID = newID;
-        return true;
-    }
-
-    public String getFirstName() {
-        return this.firstName;
-    }
-
-    public boolean setFirstName(String newFirstName) {
-        this.firstName = newFirstName;
-        return true;
-    }
-
-    public String getLastName() {
-        return this.lastName;
-    }
-
-    public boolean setLastName(String newLastName) {
-        this.firstName = newLastName;
-        return true;
-    }
-
-    public String getPhone() {
-        return this.phone;
-    }
-
-    public boolean setPhone(String newPhone) {
-        if(!newPhone.matches("\\(?\\+[0-9]{1,3}\\)? ?-?[0-9]{1,3} ?-?[0-9]{3,5} ?-?[0-9]{4}( ?-?[0-9]{3})?")) return false;
-        this.firstName = newPhone;
-        return true;
-    }
-
-    public String getCPF() {
-        return this.cpf;
-    }
-
-    public boolean setCPF(String newCPF) {
-        if(!newCPF.matches("^[0-9]{11}$")) return false;
-        if(!VerificationUtils.validateCPF(newCPF)) return false;
-        this.cpf = newCPF;
-        return true;
-    }
-
-    public boolean comparePasswords(String compPassword) {
-        return this.password.equals(compPassword);
-    }
-
-    public void setPassword(String newPassword) {
-        this.password = newPassword;
-    }
+    public LocalDateTime getCreationDate() { return this.creationDate; }
 
     public double getBalance() {
         return this.balance;
+    }
+
+    public boolean setBalance(double balance) {
+        this.balance = balance;
+        return true;
     }
 
     public boolean addFunds(double amount) {
