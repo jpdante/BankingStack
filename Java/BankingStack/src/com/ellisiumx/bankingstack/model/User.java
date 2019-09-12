@@ -7,7 +7,6 @@ import java.util.List;
 
 public class User {
     private int userID;
-    private int branchID;
     private String firstName;
     private String lastName;
     private String phone;
@@ -15,9 +14,8 @@ public class User {
     private String password;
     private List<Account> accounts;
 
-    public User(int userID, int branchID, String firstName, String lastName, String phone, String cpf, String password) {
+    public User(int userID, String firstName, String lastName, String phone, String cpf, String password) {
         this.userID = userID;
-        this.branchID = branchID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.phone = phone;
@@ -28,16 +26,6 @@ public class User {
 
     public int getUserID() {
         return this.userID;
-    }
-
-    public int getBranchID() {
-        return this.branchID;
-    }
-
-    public boolean setBranchID(int newID) {
-        if(newID <= 0) return false;
-        this.branchID = newID;
-        return true;
     }
 
     public String getFirstName() {

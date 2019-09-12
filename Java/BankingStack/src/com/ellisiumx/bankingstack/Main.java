@@ -1,21 +1,33 @@
 package com.ellisiumx.bankingstack;
 
-import com.ellisiumx.bankingstack.utils.MenuUtils;
+import com.ellisiumx.bankingstack.windows.MainWindow;
+import com.ellisiumx.bankingstack.windows.Window;
+
+import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
-        MenuUtils.printWindow("BankingStack", new String[] {
-                "Bem Vindo ao BankingStack",
-                "",
-                "1. Login",
-                "2. Cadastro",
-                "3. Listar Usuarios",
-                "4. Listar Contas hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
-                "5. Deletar Usuario",
-                "6. Deletar Conta",
-                "7. Sair",
-                "",
-        }, "Digite uma das opcões acima");
+        new Main().Run(args);
     }
+
+    private boolean isRunning;
+    private Window mainWindow;
+    private Scanner consoleScanner;
+
+    private void Run(String[] args) {
+        this.isRunning = true;
+        this.consoleScanner = new Scanner(System.in);
+        this.mainWindow = new MainWindow(this);
+        CommandLoop();
+    }
+
+    private void CommandLoop() {
+        while(isRunning) {
+            mainWindow.Run();
+        }
+    }
+
+    public void Exit() { isRunning = false; }
+
+    public Scanner getConsoleScanner() { return consoleScanner; }
 }

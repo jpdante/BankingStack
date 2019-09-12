@@ -38,7 +38,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -89,6 +89,8 @@
       <workItem from="1568192542448" duration="9000" />
       <workItem from="1568192565525" duration="62000" />
       <workItem from="1568204091631" duration="6689000" />
+      <workItem from="1568270155713" duration="40000" />
+      <workItem from="1568270271532" duration="6269000" />
     </task>
     <servers />
   </component>
@@ -100,7 +102,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
