@@ -21,6 +21,16 @@ public class ConversionUtils {
         return new IntConversionResponse(false, 0);
     }
 
+    public static String cpfToString(String cpf) {
+        String data = "";
+        int[] cpfNumbers = ConversionUtils.stringToIntArray(cpf);
+        data += cpfNumbers[0] + "" + cpfNumbers[1] + "" + cpfNumbers[2] + ".";
+        data += cpfNumbers[2] + "" + cpfNumbers[3] + "" + cpfNumbers[4] + ".";
+        data += cpfNumbers[5] + "" + cpfNumbers[6] + "" + cpfNumbers[7] + "-";
+        data += cpfNumbers[8] + "" + cpfNumbers[9];
+        return data;
+    }
+
     static class IntConversionResponse {
         private boolean success;
         private int result;

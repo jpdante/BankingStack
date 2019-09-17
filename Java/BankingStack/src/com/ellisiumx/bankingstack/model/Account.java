@@ -1,21 +1,18 @@
 package com.ellisiumx.bankingstack.model;
 
-import com.ellisiumx.bankingstack.utils.VerificationUtils;
-
-import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Account {
     private int accountID;
-    private User user;
+    private Client user;
     private Date creationDate;
-    private double balance;
+    protected double balance;
 
-    public Account(int accountID, User user, Date creationDate) {
+    public Account(int accountID, Client user, Date creationDate) {
         this(accountID, user, creationDate, 0d);
     }
 
-    public Account(int accountID, User user, Date creationDate, double balance) {
+    public Account(int accountID, Client user, Date creationDate, double balance) {
         this.accountID = accountID;
         this.user = user;
         this.creationDate = creationDate;
@@ -26,17 +23,12 @@ public class Account {
         return this.accountID;
     }
 
-    public User getUser() { return this.user; }
+    public Client getUser() { return this.user; }
 
     public Date getCreationDate() { return this.creationDate; }
 
     public double getBalance() {
         return this.balance;
-    }
-
-    public boolean setBalance(double balance) {
-        this.balance = balance;
-        return true;
     }
 
     public boolean addFunds(double amount) {

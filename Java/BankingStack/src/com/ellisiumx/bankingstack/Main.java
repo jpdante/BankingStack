@@ -1,18 +1,12 @@
 package com.ellisiumx.bankingstack;
 
 import com.ellisiumx.bankingstack.manager.DatabaseManager;
-import com.ellisiumx.bankingstack.model.User;
-import com.ellisiumx.bankingstack.utils.VerificationUtils;
-import com.ellisiumx.bankingstack.windows.MainWindow;
-import com.ellisiumx.bankingstack.windows.Window;
+import com.ellisiumx.bankingstack.model.Client;
+import com.ellisiumx.bankingstack.commands.MainScreen;
+import com.ellisiumx.bankingstack.commands.Command;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -22,15 +16,15 @@ public class Main {
     }
 
     private boolean isRunning;
-    private Window mainWindow;
+    private Command mainWindow;
     private Scanner consoleScanner;
     private DatabaseManager databaseManager;
-    private List<User> users;
+    private List<Client> users;
 
     private void Run(String[] args) {
         this.isRunning = true;
         this.consoleScanner = new Scanner(System.in);
-        this.mainWindow = new MainWindow(this);
+        this.mainWindow = new MainScreen(this);
         this.databaseManager = new DatabaseManager(Paths.get(System.getProperty("user.dir"), "db.bin"));
         try {
             this.databaseManager.Initialize();
@@ -53,5 +47,5 @@ public class Main {
 
     public DatabaseManager getDatabaseManager() { return this.databaseManager; }
 
-    public List<User> getUsers() { return this.users; }
+    public List<Client> getUsers() { return this.users; }
 }

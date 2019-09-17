@@ -1,10 +1,10 @@
-package com.ellisiumx.bankingstack.windows;
+package com.ellisiumx.bankingstack.commands;
 
 import com.ellisiumx.bankingstack.Main;
 import com.ellisiumx.bankingstack.utils.MenuUtils;
 
-public class MainWindow extends Window {
-    public MainWindow(Main programContext) {
+public class MainScreen extends Command {
+    public MainScreen(Main programContext) {
         super(programContext);
     }
 
@@ -27,12 +27,15 @@ public class MainWindow extends Window {
         int option = programContext.getConsoleScanner().nextInt();
         switch (option) {
             case 1:
-                new LoginWindow(this.programContext).Run();
+                new LoginCommand(this.programContext).Run();
                 break;
             case 2:
-                new CreateUserWindow(this.programContext).Run();
+                new CreateUserCommand(this.programContext).Run();
                 break;
             case 3:
+                break;
+            case 4:
+                new ListUsersCommand(this.programContext).Run();
                 break;
             case 9:
                 this.programContext.Exit();

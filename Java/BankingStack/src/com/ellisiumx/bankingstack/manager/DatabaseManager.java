@@ -2,12 +2,11 @@ package com.ellisiumx.bankingstack.manager;
 
 import com.ellisiumx.bankingstack.model.Account;
 import com.ellisiumx.bankingstack.model.SpecialAccount;
-import com.ellisiumx.bankingstack.model.User;
+import com.ellisiumx.bankingstack.model.Client;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -35,12 +34,12 @@ public class DatabaseManager {
         databaseRandomAccessFile.writeInt(0);
     }
 
-    public List<User> LoadUsers() throws IOException {
+    public List<Client> LoadUsers() throws IOException {
         if(databaseRandomAccessFile.length() <= 0) CreateDatabase();
         databaseRandomAccessFile.seek(0);
         int quantity = databaseRandomAccessFile.readInt();
         if(quantity == 0) return new ArrayList<>();
-        List<User> users = new ArrayList<>(quantity);
+        List<Client> users = new ArrayList<>(quantity);
         for(int i = 0; i < quantity; i++) {
             users.add(LoadUser());
         }
@@ -49,19 +48,18 @@ public class DatabaseManager {
 
     private String ReadString(int size) throws IOException {
         byte[] buffer = new byte[size];
-        int offset = (int)databaseRandomAccessFile.getFilePointer();
-        int bytesRead = databaseRandomAccessFile.read(buffer, offset, size);
+        int bytesRead = databaseRandomAccessFile.read(buffer, 0, size);
         return new String(buffer, 0, bytesRead, StandardCharsets.UTF_8);
     }
 
-    private User LoadUser() throws IOException {
+    private Client LoadUser() throws IOException {
         int userID = databaseRandomAccessFile.readInt();
         String firstName = ReadString(databaseRandomAccessFile.readInt());
         String lastName = ReadString(databaseRandomAccessFile.readInt());
         String phone = ReadString(databaseRandomAccessFile.readInt());
         String cpf = ReadString(databaseRandomAccessFile.readInt());
         String password = ReadString(databaseRandomAccessFile.readInt());
-        User user = new User(userID, firstName, lastName, phone, cpf, password);
+        Client user = new Client(userID, firstName, lastName, phone, cpf, password);
         int quantity = databaseRandomAccessFile.readInt();
         for(int i = 0; i < quantity; i++) {
             user.addAccount(LoadAccount(user));
@@ -69,7 +67,7 @@ public class DatabaseManager {
         return user;
     }
 
-    private Account LoadAccount(User user) throws IOException {
+    private Account LoadAccount(Client user) throws IOException {
         byte accountType = databaseRandomAccessFile.readByte();
         int accountID = databaseRandomAccessFile.readInt();
         int creationDate = databaseRandomAccessFile.readInt();
@@ -89,17 +87,17 @@ public class DatabaseManager {
         databaseRandomAccessFile.write(buffer, 0, buffer.length);
     }
 
-    public void SaveUsers(List<User> users) throws IOException {
+    public void SaveUsers(List<Client> users) throws IOException {
         databaseRandomAccessFile.seek(0);
         databaseRandomAccessFile.writeInt(users.size());
-        for(User user : users) {
+        for(Client user : users) {
             databaseRandomAccessFile.writeInt(user.getUserID());
             SaveString(user.getFirstName());
             SaveString(user.getLastName());
             SaveString(user.getPhone());
             SaveString(user.getCPF());
             SaveString(user.getPassword());
-            databaseRandomAccessFile.writeInt(user.getAccounts().length);
+            databaseRandomAccessFile.writeInt(user.getAccounts().size());
             for(Account account : user.getAccounts()) {
                 SaveAccount(account);
             }

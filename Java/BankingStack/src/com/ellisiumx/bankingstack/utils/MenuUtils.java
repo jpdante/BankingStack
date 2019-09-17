@@ -20,6 +20,24 @@ public class MenuUtils {
     public static final String ANSI_CYAN = "\u001B[36m";
     public static final String ANSI_WHITE = "\u001B[37m";
 
+    public static String getWindow(String[] content) { return getWindow("", content, ""); }
+
+    public static String getWindow(String headTitle, String[] content) { return getWindow(headTitle, content, ""); }
+
+    public static String getWindow(String[] content, String footTitle) { return getWindow("", content, footTitle); }
+
+    public static String getWindow(String headTitle, String[] content, String footTitle) {
+        int largestLength = headTitle.length();
+        if(footTitle.length() > largestLength) largestLength = footTitle.length();
+        for (String s : content) if(s.length() > largestLength) largestLength = s.length();
+        largestLength += 2;
+        StringBuilder window = new StringBuilder();
+        window.append(getHead(headTitle, largestLength));
+        window.append(getContent(content, largestLength));
+        window.append(getFoot(footTitle, largestLength));
+        return window.toString();
+    }
+
     public static void printWindow(String[] content) {
         printWindow("", content, "");
     }
@@ -28,27 +46,32 @@ public class MenuUtils {
         printWindow(headTitle, content, "");
     }
 
+    public static void printWindow(String[] content, String footTitle) {
+        printWindow("", content, footTitle);
+    }
+
     public static void printWindow(String headTitle, String[] content, String footTitle) {
         int largestLength = headTitle.length();
         if(footTitle.length() > largestLength) largestLength = footTitle.length();
         for (String s : content) if(s.length() > largestLength) largestLength = s.length();
         largestLength += 2;
-        printHead(headTitle, largestLength);
-        printContent(content, largestLength);
-        printFoot(footTitle, largestLength);
+        System.out.println(HeadLeftChar + parseToColor(getHead(headTitle, largestLength)) + HeadRightChar);
+        System.out.println(getContent(content, largestLength));
+        System.out.println(FootLeftChar + parseToColor(getFoot(footTitle, largestLength)) + FootRightChar);
     }
 
-    public static void printHead(String title, int size) {
+    public static String getHead(String title, int size) {
         String head;
         if(title.length() != 0) {
             head = " " + title + " ";
             head = stringDirection(StringDirection.Center, head, size, stringSizeDifferenceColor(head), HorizontalChar);
         }
         else head = stringDirection(StringDirection.Center, "", size, stringSizeDifferenceColor(title), HorizontalChar);
-        System.out.println(HeadLeftChar + parseToColor(head) + HeadRightChar);
+        return head;
     }
 
-    public static void printContent(String[] content, int size) {
+    public static String getContent(String[] content, int size) {
+        StringBuilder contentString = new StringBuilder();
         for(String data : content) {
             if(data.length() >= 2 && data.charAt(0) == '#') {
                 String directedString = data.substring(2);
@@ -65,22 +88,23 @@ public class MenuUtils {
                         directedString = stringDirection(StringDirection.Center, directedString, size - 2, stringSizeDifferenceColor(directedString),' ');
                         break;
                 }
-                System.out.println(VerticalChar + " " + parseToColor(directedString) + " " + VerticalChar);
+                contentString.append(System.lineSeparator()).append(VerticalChar).append(" ").append(parseToColor(directedString)).append(" ").append(VerticalChar);
             } else {
                 String centerContent = stringDirection(StringDirection.Center, data, size, stringSizeDifferenceColor(data), ' ');
-                System.out.println(VerticalChar + parseToColor(centerContent) + VerticalChar);
+                contentString.append(System.lineSeparator()).append(VerticalChar).append(parseToColor(centerContent)).append(VerticalChar);
             }
         }
+        return contentString.toString();
     }
 
-    public static void printFoot(String title, int size) {
+    public static String getFoot(String title, int size) {
         String foot;
         if(title.length() != 0) {
             foot = " " + title + " ";
             foot = stringDirection(StringDirection.Center, foot, size, stringSizeDifferenceColor(foot), HorizontalChar);
         }
         else foot = stringDirection(StringDirection.Center, title, size, stringSizeDifferenceColor(title), HorizontalChar);
-        System.out.println(FootLeftChar + parseToColor(foot) + FootRightChar);
+        return foot;
     }
 
     public enum StringDirection {

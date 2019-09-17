@@ -1,31 +1,31 @@
-package com.ellisiumx.bankingstack.windows;
+package com.ellisiumx.bankingstack.commands;
 
 import com.ellisiumx.bankingstack.Main;
-import com.ellisiumx.bankingstack.model.User;
+import com.ellisiumx.bankingstack.model.Client;
 import com.ellisiumx.bankingstack.utils.EncryptionUtils;
 import com.ellisiumx.bankingstack.utils.MenuUtils;
 
 import java.io.IOException;
 
-public class CreateUserWindow extends Window {
+public class CreateUserCommand extends Command {
 
-    private User user;
+    private Client user;
 
-    public CreateUserWindow(Main programContext) {
+    public CreateUserCommand(Main programContext) {
         super(programContext);
     }
 
     @Override
     public int Run() {
         MenuUtils.printWindow(new String[]{"&1Create User&r"});
-        user = new User(GetID());
+        user = new Client(GetID());
         ReadFirstName();
         ReadLastName();
         ReadPhone();
         ReadCPF();
         ReadPassword();
         MenuUtils.printWindow("User", new String[]{
-                "#l" + user.getUserID(),
+                "#l" + user.getClientID(),
                 "#l" + user.getFirstName(),
                 "#l" + user.getLastName(),
                 "#l" + user.getPhone(),
@@ -45,8 +45,8 @@ public class CreateUserWindow extends Window {
         int ID = this.programContext.getUsers().size() + 1;
         while(true) {
             boolean containsID = false;
-            for(User user : this.programContext.getUsers()) {
-                if(user.getUserID() == ID) {
+            for(Client user : this.programContext.getUsers()) {
+                if(user.getClientID() == ID) {
                     ID++;
                     containsID = true;
                 }

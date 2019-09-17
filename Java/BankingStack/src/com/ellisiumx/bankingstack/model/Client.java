@@ -5,8 +5,8 @@ import com.ellisiumx.bankingstack.utils.VerificationUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-public class User {
-    private int userID;
+public class Client {
+    private int clientID;
     private String firstName;
     private String lastName;
     private String phone;
@@ -14,8 +14,8 @@ public class User {
     private String password;
     private List<Account> accounts;
 
-    public User(int userID, String firstName, String lastName, String phone, String cpf, String password) {
-        this.userID = userID;
+    public Client(int clientID, String firstName, String lastName, String phone, String cpf, String password) {
+        this.clientID = clientID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.phone = phone;
@@ -24,8 +24,8 @@ public class User {
         this.accounts = new ArrayList<>();
     }
 
-    public User(int userID) {
-        this.userID = userID;
+    public Client(int clientID) {
+        this.clientID = clientID;
         this.firstName = "";
         this.lastName = "";
         this.phone = "";
@@ -34,8 +34,8 @@ public class User {
         this.accounts = new ArrayList<>();
     }
 
-    public int getUserID() {
-        return this.userID;
+    public int getClientID() {
+        return this.clientID;
     }
 
     public String getFirstName() {
@@ -89,7 +89,7 @@ public class User {
         this.password = newPassword;
     }
 
-    public Account[] getAccounts() { return (Account[]) this.accounts.toArray(); }
+    public List<Account> getAccounts() { return this.accounts; }
 
     public boolean addAccount(Account account) {
         if(this.accounts.contains(account)) return false;
