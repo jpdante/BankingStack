@@ -4,17 +4,17 @@ import java.util.Date;
 
 public class Account {
     private int accountID;
-    private Client user;
+    private Client client;
     private Date creationDate;
     protected double balance;
 
-    public Account(int accountID, Client user, Date creationDate) {
-        this(accountID, user, creationDate, 0d);
+    public Account(int accountID, Client client, Date creationDate) {
+        this(accountID, client, creationDate, 0d);
     }
 
-    public Account(int accountID, Client user, Date creationDate, double balance) {
+    public Account(int accountID, Client client, Date creationDate, double balance) {
         this.accountID = accountID;
-        this.user = user;
+        this.client = client;
         this.creationDate = creationDate;
         this.balance = balance;
     }
@@ -23,7 +23,7 @@ public class Account {
         return this.accountID;
     }
 
-    public Client getUser() { return this.user; }
+    public Client getClient() { return this.client; }
 
     public Date getCreationDate() { return this.creationDate; }
 

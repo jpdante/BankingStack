@@ -22,8 +22,9 @@ public class SpecialAccount extends Account {
         return true;
     }
 
+    @Override
     public boolean removeFunds(double amount) {
-        if(this.getBalance() - amount < this.accountLimit) return false;
+        if(this.getBalance() - amount < this.accountLimit * -1) return false;
         this.balance = this.getBalance() - amount;
         return true;
     }

@@ -31,7 +31,7 @@ public class ConversionUtils {
         return data;
     }
 
-    static class IntConversionResponse {
+    public static class IntConversionResponse {
         private boolean success;
         private int result;
 

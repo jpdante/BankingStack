@@ -11,16 +11,14 @@ public class Client {
     private String lastName;
     private String phone;
     private String cpf;
-    private String password;
     private List<Account> accounts;
 
-    public Client(int clientID, String firstName, String lastName, String phone, String cpf, String password) {
+    public Client(int clientID, String firstName, String lastName, String phone, String cpf) {
         this.clientID = clientID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.phone = phone;
         this.cpf = cpf;
-        this.password = password;
         this.accounts = new ArrayList<>();
     }
 
@@ -30,7 +28,6 @@ public class Client {
         this.lastName = "";
         this.phone = "";
         this.cpf = "";
-        this.password = "";
         this.accounts = new ArrayList<>();
     }
 
@@ -75,18 +72,6 @@ public class Client {
         if(!VerificationUtils.validateCPF(newCPF)) return false;
         this.cpf = newCPF;
         return true;
-    }
-
-    public boolean comparePasswords(String compPassword) {
-        return this.password.equals(compPassword);
-    }
-
-    public String getPassword() {
-        return this.password;
-    }
-
-    public void setPassword(String newPassword) {
-        this.password = newPassword;
     }
 
     public List<Account> getAccounts() { return this.accounts; }

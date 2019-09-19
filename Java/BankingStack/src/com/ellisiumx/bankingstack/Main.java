@@ -1,5 +1,6 @@
 package com.ellisiumx.bankingstack;
 
+import com.ellisiumx.bankingstack.manager.ClientManager;
 import com.ellisiumx.bankingstack.manager.DatabaseManager;
 import com.ellisiumx.bankingstack.model.Client;
 import com.ellisiumx.bankingstack.commands.MainScreen;
@@ -15,20 +16,21 @@ public class Main {
         new Main().Run(args);
     }
 
-    private boolean isRunning;
+    private static boolean isRunning;
     private Command mainWindow;
     private Scanner consoleScanner;
     private DatabaseManager databaseManager;
-    private List<Client> users;
+    private ClientManager clientManager;
 
     private void Run(String[] args) {
         this.isRunning = true;
         this.consoleScanner = new Scanner(System.in);
         this.mainWindow = new MainScreen(this);
         this.databaseManager = new DatabaseManager(Paths.get(System.getProperty("user.dir"), "db.bin"));
+        this.clientManager = new ClientManager();
         try {
             this.databaseManager.Initialize();
-            this.users = this.databaseManager.LoadUsers();
+            clientManager.addClients(this.databaseManager.LoadUsers());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -47,5 +49,7 @@ public class Main {
 
     public DatabaseManager getDatabaseManager() { return this.databaseManager; }
 
-    public List<Client> getUsers() { return this.users; }
+    public ClientManager getClientManager() { return this.clientManager; }
+
+    public static boolean IsRunning() { return isRunning; }
 }

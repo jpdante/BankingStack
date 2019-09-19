@@ -34,16 +34,16 @@ public class DatabaseManager {
         databaseRandomAccessFile.writeInt(0);
     }
 
-    public List<Client> LoadUsers() throws IOException {
+    public Client[] LoadUsers() throws IOException {
         if(databaseRandomAccessFile.length() <= 0) CreateDatabase();
         databaseRandomAccessFile.seek(0);
         int quantity = databaseRandomAccessFile.readInt();
-        if(quantity == 0) return new ArrayList<>();
+        if(quantity == 0) return new Client[0];
         List<Client> users = new ArrayList<>(quantity);
         for(int i = 0; i < quantity; i++) {
             users.add(LoadUser());
         }
-        return users;
+        return users.toArray(new Client[0]);
     }
 
     private String ReadString(int size) throws IOException {
@@ -58,8 +58,7 @@ public class DatabaseManager {
         String lastName = ReadString(databaseRandomAccessFile.readInt());
         String phone = ReadString(databaseRandomAccessFile.readInt());
         String cpf = ReadString(databaseRandomAccessFile.readInt());
-        String password = ReadString(databaseRandomAccessFile.readInt());
-        Client user = new Client(userID, firstName, lastName, phone, cpf, password);
+        Client user = new Client(userID, firstName, lastName, phone, cpf);
         int quantity = databaseRandomAccessFile.readInt();
         for(int i = 0; i < quantity; i++) {
             user.addAccount(LoadAccount(user));
@@ -87,16 +86,15 @@ public class DatabaseManager {
         databaseRandomAccessFile.write(buffer, 0, buffer.length);
     }
 
-    public void SaveUsers(List<Client> users) throws IOException {
+    public void SaveClients(List<Client> users) throws IOException {
         databaseRandomAccessFile.seek(0);
         databaseRandomAccessFile.writeInt(users.size());
         for(Client user : users) {
-            databaseRandomAccessFile.writeInt(user.getUserID());
+            databaseRandomAccessFile.writeInt(user.getClientID());
             SaveString(user.getFirstName());
             SaveString(user.getLastName());
             SaveString(user.getPhone());
             SaveString(user.getCPF());
-            SaveString(user.getPassword());
             databaseRandomAccessFile.writeInt(user.getAccounts().size());
             for(Account account : user.getAccounts()) {
                 SaveAccount(account);

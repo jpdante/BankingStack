@@ -21,20 +21,51 @@ public class ClientManager {
 
     public boolean addClient(Client client) {
         if(clients.contains(client)) return false;
-
         clients.add(client);
         return true;
     }
 
-    public String printClientsList() {
-        List<String> content = new ArrayList<>();
-        for(Client user : new Client[] {}) {
-            content.add("#l#" + String.format("%04d", user.getClientID()));
-            content.add("#l   ├─ " + user.getFirstName() + " " + user.getLastName());
-            content.add("#l   ├─ " + user.getPhone());
-            content.add("#l   ├─ " + ConversionUtils.cpfToString(user.getCPF()));
-            content.add("#l   └─ " + user.getPassword());
+    public boolean addClients(Client[] clients) {
+        boolean ok = true;
+        for (Client client : clients) {
+            if(!addClient(client)) ok = false;
         }
-        return MenuUtils.getWindow("Clients", content.toArray(new String[0]));
+        return ok;
+    }
+
+    public boolean removeClient(Client client) {
+        if(!clients.contains(client)) return false;
+        clients.remove(client);
+        return true;
+    }
+
+    public Client getClientByID(int id) {
+        if(id < clients.size() && clients.get(id) != null && clients.get(id).getClientID() == id) return clients.get(id);
+        for(Client client : clients) {
+            if(client.getClientID() == id) return client;
+        }
+        return null;
+    }
+
+    public Client getClientByCPF(String cpf) {
+        for(Client client : clients) {
+            if(client.getCPF().equals(cpf)) return client;
+        }
+        return null;
+    }
+
+    public boolean hasClientWithCPF(String cpf) {
+        for(Client client : clients) {
+            if(client.getCPF().equals(cpf)) return true;
+        }
+        return false;
+    }
+
+    public boolean hasClientWithID(int id) {
+        if(id < clients.size() && clients.get(id) != null && clients.get(id).getClientID() == id) return true;
+        for(Client client : clients) {
+            if(client.getClientID() == id) return true;
+        }
+        return false;
     }
 }
