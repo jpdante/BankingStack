@@ -7,16 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b905da86-33a0-4d5a-87c6-06bd4c55d3b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/BankingStack.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBank/com/ellisiumx/bbank/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBank/com/ellisiumx/bbank/model/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBank/com/ellisiumx/bbank/utils/ConversionUtils$IntConversionResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBank/com/ellisiumx/bbank/utils/ConversionUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBank/com/ellisiumx/bbank/utils/EncryptionUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBank/com/ellisiumx/bbank/utils/MenuUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBank/com/ellisiumx/bbank/utils/VerificationUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$StringDirection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$StringDirection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils.class" afterDir="false" />
@@ -113,6 +104,9 @@
       <workItem from="1568908924117" duration="731000" />
       <workItem from="1568910862425" duration="1362000" />
       <workItem from="1568912489454" duration="1004000" />
+      <workItem from="1569029406497" duration="599000" />
+      <workItem from="1569033919767" duration="1204000" />
+      <workItem from="1569101620555" duration="84000" />
     </task>
     <servers />
   </component>

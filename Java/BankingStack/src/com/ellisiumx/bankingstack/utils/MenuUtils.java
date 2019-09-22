@@ -1,7 +1,6 @@
 package com.ellisiumx.bankingstack.utils;
 
 public class MenuUtils {
-
     public static final char HeadLeftChar   = '╔';
     public static final char HeadRightChar  = '╗';
     public static final char HorizontalChar = '═';
