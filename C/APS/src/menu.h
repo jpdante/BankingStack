@@ -2,8 +2,9 @@
 #define MENU_H
 
 #include <string.h>
+#include <stdio.h>
 
-#define TAM 40
+#define TAM 50
 
 void criarMenuSuperior();
 void criarCabecalho(char str[]);
