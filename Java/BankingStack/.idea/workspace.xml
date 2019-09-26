@@ -55,6 +55,17 @@
       <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$StringDirection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$StringDirection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/CreateAccountCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/CreateAccountCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/CreateClientCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/CreateClientCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/DeleteAccountCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/DeleteAccountCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/DeleteClientCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/DeleteClientCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/DepositCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/DepositCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/ListClientAccountsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/ListClientAccountsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/MainScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/SearchClientCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/SearchClientCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/TransferCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/TransferCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/WithdrawCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/commands/WithdrawCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/utils/CommandUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ellisiumx/bankingstack/utils/CommandUtils.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,6 +164,7 @@
       <workItem from="1569276586121" duration="620000" />
       <workItem from="1569457819609" duration="615000" />
       <workItem from="1569459142296" duration="5433000" />
+      <workItem from="1569471830250" duration="57000" />
     </task>
     <servers />
   </component>
