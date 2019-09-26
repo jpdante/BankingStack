@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/jpdante/CLionProjects/BankingStack/Utils/MenuUtils.c
+MenuUtils.h
+C:/Users/jpdante/CLionProjects/BankingStack/Utils/MenuUtils.h
+string.h
+-
+stdio.h
+-
+
+C:/Users/jpdante/CLionProjects/BankingStack/Utils/MenuUtils.h
+
