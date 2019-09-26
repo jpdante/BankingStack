@@ -4,8 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/jpdante/CLionProjects/BankingStack/Main.c" "C:/Users/jpdante/CLionProjects/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/Main.c.obj"
-  "C:/Users/jpdante/CLionProjects/BankingStack/Utils/MenuUtils.c" "C:/Users/jpdante/CLionProjects/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/Utils/MenuUtils.c.obj"
+  "C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/model/account.c" "C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/Model/account.c.obj"
+  "C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/model/client.c" "C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/Model/client.c.obj"
+  "C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/utils/convert.c" "C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/Utils/convert.c.obj"
+  "C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/utils/menu.c" "C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/Utils/menu.c.obj"
+  "C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/main.c" "C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/main.c.obj"
+  "C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/manager/account_manager.c" "C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/manager/account_manager.c.obj"
+  "C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/manager/client_manager.c" "C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/manager/client_manager.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

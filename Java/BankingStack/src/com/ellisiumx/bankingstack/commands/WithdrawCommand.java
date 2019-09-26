@@ -22,11 +22,11 @@ public class WithdrawCommand extends Command {
 
         if(account.getValue().removeFunds(amount.getValue())) {
             MenuUtils.printWindow("Withdraw", new String[] {
-                    "#c&2$" + amount + " successfully withdrawn!&r"
+                    "#c$" + amount + " successfully withdrawn!"
             });
         } else {
             MenuUtils.printWindow("Withdraw", new String[] {
-                    "#c&4Failed to withdraw!&r"
+                    "#cFailed to withdraw!"
             });
         }
 
@@ -40,7 +40,7 @@ public class WithdrawCommand extends Command {
 
     private int Error() {
         MenuUtils.printWindow("Error", new String[]{
-                "#c&4Failed to withdraw&r",
+                "#cFailed to withdraw",
         });
         return 0;
     }

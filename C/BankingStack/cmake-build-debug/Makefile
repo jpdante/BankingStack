@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\jpdante\CLionProjects\BankingStack
+CMAKE_SOURCE_DIR = C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\jpdante\CLionProjects\BankingStack\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jpdante\CLionProjects\BankingStack\cmake-build-debug\CMakeFiles C:\Users\jpdante\CLionProjects\BankingStack\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug\CMakeFiles C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jpdante\CLionProjects\BankingStack\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,59 +122,194 @@ BankingStack/fast:
 	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/build
 .PHONY : BankingStack/fast
 
-Main.obj: Main.c.obj
+main.obj: main.c.obj
 
-.PHONY : Main.obj
-
-# target to build an object file
-Main.c.obj:
-	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/Main.c.obj
-.PHONY : Main.c.obj
-
-Main.i: Main.c.i
-
-.PHONY : Main.i
-
-# target to preprocess a source file
-Main.c.i:
-	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/Main.c.i
-.PHONY : Main.c.i
-
-Main.s: Main.c.s
-
-.PHONY : Main.s
-
-# target to generate assembly for a file
-Main.c.s:
-	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/Main.c.s
-.PHONY : Main.c.s
-
-Utils/MenuUtils.obj: Utils/MenuUtils.c.obj
-
-.PHONY : Utils/MenuUtils.obj
+.PHONY : main.obj
 
 # target to build an object file
-Utils/MenuUtils.c.obj:
-	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/Utils/MenuUtils.c.obj
-.PHONY : Utils/MenuUtils.c.obj
+main.c.obj:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/main.c.obj
+.PHONY : main.c.obj
 
-Utils/MenuUtils.i: Utils/MenuUtils.c.i
+main.i: main.c.i
 
-.PHONY : Utils/MenuUtils.i
+.PHONY : main.i
 
 # target to preprocess a source file
-Utils/MenuUtils.c.i:
-	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/Utils/MenuUtils.c.i
-.PHONY : Utils/MenuUtils.c.i
+main.c.i:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/main.c.i
+.PHONY : main.c.i
 
-Utils/MenuUtils.s: Utils/MenuUtils.c.s
+main.s: main.c.s
 
-.PHONY : Utils/MenuUtils.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-Utils/MenuUtils.c.s:
-	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/Utils/MenuUtils.c.s
-.PHONY : Utils/MenuUtils.c.s
+main.c.s:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/main.c.s
+.PHONY : main.c.s
+
+manager/account_manager.obj: manager/account_manager.c.obj
+
+.PHONY : manager/account_manager.obj
+
+# target to build an object file
+manager/account_manager.c.obj:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/manager/account_manager.c.obj
+.PHONY : manager/account_manager.c.obj
+
+manager/account_manager.i: manager/account_manager.c.i
+
+.PHONY : manager/account_manager.i
+
+# target to preprocess a source file
+manager/account_manager.c.i:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/manager/account_manager.c.i
+.PHONY : manager/account_manager.c.i
+
+manager/account_manager.s: manager/account_manager.c.s
+
+.PHONY : manager/account_manager.s
+
+# target to generate assembly for a file
+manager/account_manager.c.s:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/manager/account_manager.c.s
+.PHONY : manager/account_manager.c.s
+
+manager/client_manager.obj: manager/client_manager.c.obj
+
+.PHONY : manager/client_manager.obj
+
+# target to build an object file
+manager/client_manager.c.obj:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/manager/client_manager.c.obj
+.PHONY : manager/client_manager.c.obj
+
+manager/client_manager.i: manager/client_manager.c.i
+
+.PHONY : manager/client_manager.i
+
+# target to preprocess a source file
+manager/client_manager.c.i:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/manager/client_manager.c.i
+.PHONY : manager/client_manager.c.i
+
+manager/client_manager.s: manager/client_manager.c.s
+
+.PHONY : manager/client_manager.s
+
+# target to generate assembly for a file
+manager/client_manager.c.s:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/manager/client_manager.c.s
+.PHONY : manager/client_manager.c.s
+
+model/account.obj: model/account.c.obj
+
+.PHONY : model/account.obj
+
+# target to build an object file
+model/account.c.obj:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/model/account.c.obj
+.PHONY : model/account.c.obj
+
+model/account.i: model/account.c.i
+
+.PHONY : model/account.i
+
+# target to preprocess a source file
+model/account.c.i:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/model/account.c.i
+.PHONY : model/account.c.i
+
+model/account.s: model/account.c.s
+
+.PHONY : model/account.s
+
+# target to generate assembly for a file
+model/account.c.s:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/model/account.c.s
+.PHONY : model/account.c.s
+
+model/client.obj: model/client.c.obj
+
+.PHONY : model/client.obj
+
+# target to build an object file
+model/client.c.obj:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/model/client.c.obj
+.PHONY : model/client.c.obj
+
+model/client.i: model/client.c.i
+
+.PHONY : model/client.i
+
+# target to preprocess a source file
+model/client.c.i:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/model/client.c.i
+.PHONY : model/client.c.i
+
+model/client.s: model/client.c.s
+
+.PHONY : model/client.s
+
+# target to generate assembly for a file
+model/client.c.s:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/model/client.c.s
+.PHONY : model/client.c.s
+
+utils/convert.obj: utils/convert.c.obj
+
+.PHONY : utils/convert.obj
+
+# target to build an object file
+utils/convert.c.obj:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/utils/convert.c.obj
+.PHONY : utils/convert.c.obj
+
+utils/convert.i: utils/convert.c.i
+
+.PHONY : utils/convert.i
+
+# target to preprocess a source file
+utils/convert.c.i:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/utils/convert.c.i
+.PHONY : utils/convert.c.i
+
+utils/convert.s: utils/convert.c.s
+
+.PHONY : utils/convert.s
+
+# target to generate assembly for a file
+utils/convert.c.s:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/utils/convert.c.s
+.PHONY : utils/convert.c.s
+
+utils/menu.obj: utils/menu.c.obj
+
+.PHONY : utils/menu.obj
+
+# target to build an object file
+utils/menu.c.obj:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/utils/menu.c.obj
+.PHONY : utils/menu.c.obj
+
+utils/menu.i: utils/menu.c.i
+
+.PHONY : utils/menu.i
+
+# target to preprocess a source file
+utils/menu.c.i:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/utils/menu.c.i
+.PHONY : utils/menu.c.i
+
+utils/menu.s: utils/menu.c.s
+
+.PHONY : utils/menu.s
+
+# target to generate assembly for a file
+utils/menu.c.s:
+	$(MAKE) -f CMakeFiles\BankingStack.dir\build.make CMakeFiles/BankingStack.dir/utils/menu.c.s
+.PHONY : utils/menu.c.s
 
 # Help Target
 help:
@@ -185,12 +320,27 @@ help:
 	@echo ... BankingStack
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Main.obj
-	@echo ... Main.i
-	@echo ... Main.s
-	@echo ... Utils/MenuUtils.obj
-	@echo ... Utils/MenuUtils.i
-	@echo ... Utils/MenuUtils.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
+	@echo ... manager/account_manager.obj
+	@echo ... manager/account_manager.i
+	@echo ... manager/account_manager.s
+	@echo ... manager/client_manager.obj
+	@echo ... manager/client_manager.i
+	@echo ... manager/client_manager.s
+	@echo ... model/account.obj
+	@echo ... model/account.i
+	@echo ... model/account.s
+	@echo ... model/client.obj
+	@echo ... model/client.i
+	@echo ... model/client.s
+	@echo ... utils/convert.obj
+	@echo ... utils/convert.i
+	@echo ... utils/convert.s
+	@echo ... utils/menu.obj
+	@echo ... utils/menu.i
+	@echo ... utils/menu.s
 .PHONY : help
 
 

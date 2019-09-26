@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\jpdante\CLionProjects\BankingStack
+CMAKE_SOURCE_DIR = C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\jpdante\CLionProjects\BankingStack\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/BankingStack.dir/depend.make
@@ -56,47 +56,122 @@ include CMakeFiles/BankingStack.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/BankingStack.dir/flags.make
 
-CMakeFiles/BankingStack.dir/Main.c.obj: CMakeFiles/BankingStack.dir/flags.make
-CMakeFiles/BankingStack.dir/Main.c.obj: ../Main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jpdante\CLionProjects\BankingStack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/BankingStack.dir/Main.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BankingStack.dir\Main.c.obj   -c C:\Users\jpdante\CLionProjects\BankingStack\Main.c
+CMakeFiles/BankingStack.dir/main.c.obj: CMakeFiles/BankingStack.dir/flags.make
+CMakeFiles/BankingStack.dir/main.c.obj: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/BankingStack.dir/main.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BankingStack.dir\main.c.obj   -c C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\main.c
 
-CMakeFiles/BankingStack.dir/Main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BankingStack.dir/Main.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jpdante\CLionProjects\BankingStack\Main.c > CMakeFiles\BankingStack.dir\Main.c.i
+CMakeFiles/BankingStack.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BankingStack.dir/main.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\main.c > CMakeFiles\BankingStack.dir\main.c.i
 
-CMakeFiles/BankingStack.dir/Main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BankingStack.dir/Main.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jpdante\CLionProjects\BankingStack\Main.c -o CMakeFiles\BankingStack.dir\Main.c.s
+CMakeFiles/BankingStack.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BankingStack.dir/main.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\main.c -o CMakeFiles\BankingStack.dir\main.c.s
 
-CMakeFiles/BankingStack.dir/Utils/MenuUtils.c.obj: CMakeFiles/BankingStack.dir/flags.make
-CMakeFiles/BankingStack.dir/Utils/MenuUtils.c.obj: ../Utils/MenuUtils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jpdante\CLionProjects\BankingStack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/BankingStack.dir/Utils/MenuUtils.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BankingStack.dir\Utils\MenuUtils.c.obj   -c C:\Users\jpdante\CLionProjects\BankingStack\Utils\MenuUtils.c
+CMakeFiles/BankingStack.dir/utils/menu.c.obj: CMakeFiles/BankingStack.dir/flags.make
+CMakeFiles/BankingStack.dir/utils/menu.c.obj: ../utils/menu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/BankingStack.dir/utils/menu.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BankingStack.dir\utils\menu.c.obj   -c C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\utils\menu.c
 
-CMakeFiles/BankingStack.dir/Utils/MenuUtils.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BankingStack.dir/Utils/MenuUtils.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jpdante\CLionProjects\BankingStack\Utils\MenuUtils.c > CMakeFiles\BankingStack.dir\Utils\MenuUtils.c.i
+CMakeFiles/BankingStack.dir/utils/menu.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BankingStack.dir/utils/menu.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\utils\menu.c > CMakeFiles\BankingStack.dir\utils\menu.c.i
 
-CMakeFiles/BankingStack.dir/Utils/MenuUtils.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BankingStack.dir/Utils/MenuUtils.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jpdante\CLionProjects\BankingStack\Utils\MenuUtils.c -o CMakeFiles\BankingStack.dir\Utils\MenuUtils.c.s
+CMakeFiles/BankingStack.dir/utils/menu.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BankingStack.dir/utils/menu.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\utils\menu.c -o CMakeFiles\BankingStack.dir\utils\menu.c.s
+
+CMakeFiles/BankingStack.dir/model/account.c.obj: CMakeFiles/BankingStack.dir/flags.make
+CMakeFiles/BankingStack.dir/model/account.c.obj: ../model/account.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/BankingStack.dir/model/account.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BankingStack.dir\model\account.c.obj   -c C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\model\account.c
+
+CMakeFiles/BankingStack.dir/model/account.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BankingStack.dir/model/account.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\model\account.c > CMakeFiles\BankingStack.dir\model\account.c.i
+
+CMakeFiles/BankingStack.dir/model/account.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BankingStack.dir/model/account.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\model\account.c -o CMakeFiles\BankingStack.dir\model\account.c.s
+
+CMakeFiles/BankingStack.dir/model/client.c.obj: CMakeFiles/BankingStack.dir/flags.make
+CMakeFiles/BankingStack.dir/model/client.c.obj: ../model/client.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/BankingStack.dir/model/client.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BankingStack.dir\model\client.c.obj   -c C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\model\client.c
+
+CMakeFiles/BankingStack.dir/model/client.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BankingStack.dir/model/client.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\model\client.c > CMakeFiles\BankingStack.dir\model\client.c.i
+
+CMakeFiles/BankingStack.dir/model/client.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BankingStack.dir/model/client.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\model\client.c -o CMakeFiles\BankingStack.dir\model\client.c.s
+
+CMakeFiles/BankingStack.dir/utils/convert.c.obj: CMakeFiles/BankingStack.dir/flags.make
+CMakeFiles/BankingStack.dir/utils/convert.c.obj: ../utils/convert.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/BankingStack.dir/utils/convert.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BankingStack.dir\utils\convert.c.obj   -c C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\utils\convert.c
+
+CMakeFiles/BankingStack.dir/utils/convert.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BankingStack.dir/utils/convert.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\utils\convert.c > CMakeFiles\BankingStack.dir\utils\convert.c.i
+
+CMakeFiles/BankingStack.dir/utils/convert.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BankingStack.dir/utils/convert.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\utils\convert.c -o CMakeFiles\BankingStack.dir\utils\convert.c.s
+
+CMakeFiles/BankingStack.dir/manager/account_manager.c.obj: CMakeFiles/BankingStack.dir/flags.make
+CMakeFiles/BankingStack.dir/manager/account_manager.c.obj: ../manager/account_manager.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/BankingStack.dir/manager/account_manager.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BankingStack.dir\manager\account_manager.c.obj   -c C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\manager\account_manager.c
+
+CMakeFiles/BankingStack.dir/manager/account_manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BankingStack.dir/manager/account_manager.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\manager\account_manager.c > CMakeFiles\BankingStack.dir\manager\account_manager.c.i
+
+CMakeFiles/BankingStack.dir/manager/account_manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BankingStack.dir/manager/account_manager.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\manager\account_manager.c -o CMakeFiles\BankingStack.dir\manager\account_manager.c.s
+
+CMakeFiles/BankingStack.dir/manager/client_manager.c.obj: CMakeFiles/BankingStack.dir/flags.make
+CMakeFiles/BankingStack.dir/manager/client_manager.c.obj: ../manager/client_manager.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/BankingStack.dir/manager/client_manager.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BankingStack.dir\manager\client_manager.c.obj   -c C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\manager\client_manager.c
+
+CMakeFiles/BankingStack.dir/manager/client_manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BankingStack.dir/manager/client_manager.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\manager\client_manager.c > CMakeFiles\BankingStack.dir\manager\client_manager.c.i
+
+CMakeFiles/BankingStack.dir/manager/client_manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BankingStack.dir/manager/client_manager.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\manager\client_manager.c -o CMakeFiles\BankingStack.dir\manager\client_manager.c.s
 
 # Object files for target BankingStack
 BankingStack_OBJECTS = \
-"CMakeFiles/BankingStack.dir/Main.c.obj" \
-"CMakeFiles/BankingStack.dir/Utils/MenuUtils.c.obj"
+"CMakeFiles/BankingStack.dir/main.c.obj" \
+"CMakeFiles/BankingStack.dir/utils/menu.c.obj" \
+"CMakeFiles/BankingStack.dir/model/account.c.obj" \
+"CMakeFiles/BankingStack.dir/model/client.c.obj" \
+"CMakeFiles/BankingStack.dir/utils/convert.c.obj" \
+"CMakeFiles/BankingStack.dir/manager/account_manager.c.obj" \
+"CMakeFiles/BankingStack.dir/manager/client_manager.c.obj"
 
 # External object files for target BankingStack
 BankingStack_EXTERNAL_OBJECTS =
 
-BankingStack.exe: CMakeFiles/BankingStack.dir/Main.c.obj
-BankingStack.exe: CMakeFiles/BankingStack.dir/Utils/MenuUtils.c.obj
+BankingStack.exe: CMakeFiles/BankingStack.dir/main.c.obj
+BankingStack.exe: CMakeFiles/BankingStack.dir/utils/menu.c.obj
+BankingStack.exe: CMakeFiles/BankingStack.dir/model/account.c.obj
+BankingStack.exe: CMakeFiles/BankingStack.dir/model/client.c.obj
+BankingStack.exe: CMakeFiles/BankingStack.dir/utils/convert.c.obj
+BankingStack.exe: CMakeFiles/BankingStack.dir/manager/account_manager.c.obj
+BankingStack.exe: CMakeFiles/BankingStack.dir/manager/client_manager.c.obj
 BankingStack.exe: CMakeFiles/BankingStack.dir/build.make
 BankingStack.exe: CMakeFiles/BankingStack.dir/linklibs.rsp
 BankingStack.exe: CMakeFiles/BankingStack.dir/objects1.rsp
 BankingStack.exe: CMakeFiles/BankingStack.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\jpdante\CLionProjects\BankingStack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable BankingStack.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable BankingStack.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BankingStack.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -109,6 +184,6 @@ CMakeFiles/BankingStack.dir/clean:
 .PHONY : CMakeFiles/BankingStack.dir/clean
 
 CMakeFiles/BankingStack.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\jpdante\CLionProjects\BankingStack C:\Users\jpdante\CLionProjects\BankingStack C:\Users\jpdante\CLionProjects\BankingStack\cmake-build-debug C:\Users\jpdante\CLionProjects\BankingStack\cmake-build-debug C:\Users\jpdante\CLionProjects\BankingStack\cmake-build-debug\CMakeFiles\BankingStack.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug C:\Users\jpdante\Documents\GitHub\BankingStack\C\BankingStack\cmake-build-debug\CMakeFiles\BankingStack.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/BankingStack.dir/depend
 

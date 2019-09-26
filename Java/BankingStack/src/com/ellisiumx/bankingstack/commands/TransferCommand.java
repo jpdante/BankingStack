@@ -23,18 +23,18 @@ public class TransferCommand extends Command {
         if(!to.getKey()) return Error();
         if(from.getValue() == to.getValue()) {
             MenuUtils.printWindow("Error", new String[] {
-                    "#c&4You cannot transfer to yourself.&r",
+                    "#cYou cannot transfer to yourself.",
             });
             return Error();
         }
 
         if(from.getValue().removeFunds(amount.getValue()) && to.getValue().addFunds(amount.getValue())) {
             MenuUtils.printWindow("Transfer", new String[] {
-                    "#c&2Successful transfer!&r"
+                    "#cSuccessful transfer!"
             });
         } else {
             MenuUtils.printWindow("Transfer", new String[] {
-                    "#c&4Failed to transfer!&r"
+                    "#cFailed to transfer!"
             });
         }
 
@@ -48,7 +48,7 @@ public class TransferCommand extends Command {
 
     private int Error() {
         MenuUtils.printWindow("Error", new String[]{
-                "#c&4Failed to transfer&r",
+                "#cFailed to transfer",
         });
         return 0;
     }

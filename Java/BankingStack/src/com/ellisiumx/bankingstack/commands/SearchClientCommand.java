@@ -27,7 +27,7 @@ public class SearchClientCommand extends Command {
 
     private static int Error() {
         MenuUtils.printWindow("Error", new String[]{
-                "#c&4Failed to get client!&r",
+                "#cFailed to get client!",
         });
         return 0;
     }

@@ -3,4 +3,4 @@ project(BankingStack C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(BankingStack Main.c Utils/MenuUtils.c Utils/MenuUtils.h Model/Client.h Model/Account.h)
+add_executable(BankingStack main.c utils/menu.c utils/menu.h model/client.h model/account.h model/account.c main.h model/client.c utils/convert.c utils/convert.h manager/account_manager.c manager/account_manager.h manager/client_manager.c manager/client_manager.h)

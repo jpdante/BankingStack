@@ -19,13 +19,13 @@ public class DeleteAccountCommand extends Command {
         if(!account.getKey()) return Error();
         if(account.getValue().getBalance() < 0.0d) {
             MenuUtils.printWindow("Delete Account", new String[] {
-                    "#c&4You need to pay your credit before closing this account!&r"
+                    "#cYou need to pay your credit before closing this account!"
             });
             return Error();
         }
         if(account.getValue().getBalance() != 0.0d) {
             MenuUtils.printWindow("Delete Account", new String[] {
-                    "#c&4You need to withdraw all money from the account before it can be closed!&r"
+                    "#cYou need to withdraw all money from the account before it can be closed!"
             });
             return Error();
         }
@@ -33,7 +33,7 @@ public class DeleteAccountCommand extends Command {
         account.getValue().getClient().removeAccount(account.getValue());
 
         MenuUtils.printWindow("Delete Account", new String[] {
-                "#c&2Account deleted successfully!&r"
+                "#cAccount deleted successfully!"
         });
 
         try {
@@ -46,7 +46,7 @@ public class DeleteAccountCommand extends Command {
 
     private int Error() {
         MenuUtils.printWindow("Error", new String[]{
-                "#c&4Failed to close account&r",
+                "#cFailed to close account",
         });
         return 0;
     }

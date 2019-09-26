@@ -22,11 +22,11 @@ public class DepositCommand extends Command {
 
         if(account.getValue().addFunds(amount.getValue())) {
             MenuUtils.printWindow("Deposit", new String[] {
-                    "#c&2$" + amount + " successfully deposited!&r"
+                    "#c$" + amount + " successfully deposited!"
             });
         } else {
             MenuUtils.printWindow("Deposit", new String[] {
-                    "#c&4Failed to deposit!&r"
+                    "#cFailed to deposit!"
             });
         }
 
@@ -40,7 +40,7 @@ public class DepositCommand extends Command {
 
     private int Error() {
         MenuUtils.printWindow("Error", new String[]{
-                "#c&4Failed to deposit&r",
+                "#cFailed to deposit",
         });
         return 0;
     }

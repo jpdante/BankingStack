@@ -1,6 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/BankingStack.dir/Main.c.obj"
-  "CMakeFiles/BankingStack.dir/Utils/MenuUtils.c.obj"
+  "CMakeFiles/BankingStack.dir/main.c.obj"
+  "CMakeFiles/BankingStack.dir/utils/menu.c.obj"
+  "CMakeFiles/BankingStack.dir/model/account.c.obj"
+  "CMakeFiles/BankingStack.dir/model/client.c.obj"
+  "CMakeFiles/BankingStack.dir/utils/convert.c.obj"
+  "CMakeFiles/BankingStack.dir/manager/account_manager.c.obj"
+  "CMakeFiles/BankingStack.dir/manager/client_manager.c.obj"
   "BankingStack.pdb"
   "BankingStack.exe"
   "BankingStack.exe.manifest"

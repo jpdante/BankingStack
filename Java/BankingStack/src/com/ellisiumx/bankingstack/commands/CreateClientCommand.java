@@ -15,7 +15,7 @@ public class CreateClientCommand extends Command {
 
     @Override
     public int Run() {
-        MenuUtils.printWindow(new String[]{"&1Create Client&r"});
+        MenuUtils.printWindow(new String[]{"Create Client"});
         Pair<Boolean, String> firstName = CommandUtils.GetFirstName(this.programContext.getConsoleScanner());
         if (!firstName.getKey()) return Error();
         Pair<Boolean, String> lastName = CommandUtils.GetLastName(this.programContext.getConsoleScanner());
@@ -26,7 +26,7 @@ public class CreateClientCommand extends Command {
         if (!cpf.getKey()) return Error();
         if(this.programContext.getClientManager().hasClientWithCPF(cpf.getValue())) {
             MenuUtils.printWindow("CPF", new String[]{
-                    "#c&4An account with this CPF already exists!&r",
+                    "#cAn account with this CPF already exists!",
             });
             return Error();
         }
@@ -50,7 +50,7 @@ public class CreateClientCommand extends Command {
 
     private static int Error() {
         MenuUtils.printWindow("Error", new String[]{
-                "#c&4Failed to create client&r",
+                "#cFailed to create client",
         });
         return 0;
     }

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/jpdante/CLionProjects/BankingStack
+# Install script for directory: C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/jpdante/CLionProjects/BankingStack/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

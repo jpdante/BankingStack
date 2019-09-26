@@ -15,7 +15,7 @@ public class CommandUtils {
             String data = scanner.nextLine();
             if (data.length() <= 0) {
                 MenuUtils.printWindow("Error", new String[]{
-                        "#c&4Invalid name&r",
+                        "#cInvalid name",
                 });
                 if (!TryAgain(scanner)) return new Pair<>(false, null);
                 continue;
@@ -31,7 +31,7 @@ public class CommandUtils {
             String data = scanner.nextLine();
             if (data.length() <= 0) {
                 MenuUtils.printWindow("Error", new String[]{
-                        "#c&4Invalid name&r",
+                        "#cInvalid name",
                 });
                 if (!TryAgain(scanner)) return new Pair<>(false, null);
                 continue;
@@ -47,9 +47,9 @@ public class CommandUtils {
             String data = scanner.nextLine();
             if (data.length() <= 0 || !VerificationUtils.validatePhone(data)) {
                 MenuUtils.printWindow("Error", new String[]{
-                        "#c&4Invalid phone&r",
+                        "#cInvalid phone",
                         "Valid syntax:",
-                        "&b+55 11 12345-6789&r",
+                        "+55 11 12345-6789",
                 });
                 if (!TryAgain(scanner)) return new Pair<>(false, null);
                 continue;
@@ -65,7 +65,7 @@ public class CommandUtils {
             String data = scanner.nextLine();
             if (data.length() <= 0 || !VerificationUtils.validateCPF(data)) {
                 MenuUtils.printWindow("Error", new String[]{
-                        "#c&4Invalid cpf&r",
+                        "#cInvalid cpf",
                 });
                 if (!TryAgain(scanner)) return new Pair<>(false, null);
                 continue;
@@ -81,7 +81,7 @@ public class CommandUtils {
             double limit = scanner.nextDouble();
             if (limit <= 0.0d) {
                 MenuUtils.printWindow("Error", new String[]{
-                        "#c&4Invalid limit&r",
+                        "#cInvalid limit",
                         "Limit must be greater than 0!",
                 });
                 if (!TryAgain(scanner)) return new Pair<>(false, 0.0d);
@@ -99,7 +99,7 @@ public class CommandUtils {
             if (VerificationUtils.validateCPF(data)) {
                 if (!context.getClientManager().hasClientWithCPF(data)) {
                     MenuUtils.printWindow("Error", new String[]{
-                            "#c&4Invalid ID&r",
+                            "#cInvalid ID",
                     });
                     if (!TryAgain(context.getConsoleScanner())) return new Pair<>(false, null);
                     continue;
@@ -110,7 +110,7 @@ public class CommandUtils {
             if (intConversion.isSuccess()) {
                 if (intConversion.getResult() < 0 || !context.getClientManager().hasClientWithID(intConversion.getResult())) {
                     MenuUtils.printWindow("Error", new String[]{
-                            "#c&4Invalid ID&r",
+                            "#cInvalid ID",
                     });
                     if (!TryAgain(context.getConsoleScanner())) return new Pair<>(false, null);
                     continue;
@@ -118,7 +118,7 @@ public class CommandUtils {
                 return new Pair<>(true, context.getClientManager().getClientByID(intConversion.getResult()));
             } else {
                 MenuUtils.printWindow("Error", new String[]{
-                        "#c&4Invalid input&r",
+                        "#cInvalid input",
                 });
                 if (!TryAgain(context.getConsoleScanner())) return new Pair<>(false, null);
                 continue;
@@ -137,7 +137,7 @@ public class CommandUtils {
                 }
             }
             MenuUtils.printWindow("Error", new String[]{
-                    "#c&4Invalid account id, please try again&r",
+                    "#cInvalid account id, please try again",
             });
             if(!TryAgain(context.getConsoleScanner())) return new Pair<>(false, null);
             continue;
@@ -151,7 +151,7 @@ public class CommandUtils {
             double limit = scanner.nextDouble();
             if (limit <= 0.0d) {
                 MenuUtils.printWindow("Error", new String[]{
-                        "#c&4Invalid limit&r",
+                        "#cInvalid limit",
                         "Amount must be greater than 0!",
                 });
                 if (!TryAgain(scanner)) return new Pair<>(false, 0.0d);

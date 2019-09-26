@@ -23,7 +23,7 @@ public class CreateAccountCommand extends Command {
 
     @Override
     public int Run() {
-        MenuUtils.printWindow(new String[]{"&1Create Account&r"});
+        MenuUtils.printWindow(new String[]{"Create Account"});
         Pair<Boolean, Client> client = CommandUtils.GetClient(this.programContext);
         if(!client.getKey()) return Error();
         Pair<Boolean, Double> limit = CommandUtils.GetLimit(this.programContext.getConsoleScanner());
@@ -61,7 +61,7 @@ public class CreateAccountCommand extends Command {
 
     private static int Error() {
         MenuUtils.printWindow("Error", new String[]{
-                "#c&4Failed to create account&r",
+                "#cFailed to create account",
         });
         return 0;
     }

@@ -6,13 +6,51 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/jpdante/CLionProjects/BankingStack/Utils/MenuUtils.c
-MenuUtils.h
-C:/Users/jpdante/CLionProjects/BankingStack/Utils/MenuUtils.h
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/model/account.c
+account.h
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/model/account.h
 string.h
 -
 stdio.h
 -
+stdlib.h
+-
+../utils/menu.h
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/utils/menu.h
+../utils/convert.h
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/utils/convert.h
 
-C:/Users/jpdante/CLionProjects/BankingStack/Utils/MenuUtils.h
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/model/account.h
+client.h
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/model/client.h
+
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/model/client.c
+client.h
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/model/client.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+../utils/menu.h
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/utils/menu.h
+../utils/convert.h
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/utils/convert.h
+
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/model/client.h
+
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/utils/convert.c
+convert.h
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/utils/convert.h
+stdio.h
+-
+stdlib.h
+-
+
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/utils/convert.h
+../model/account.h
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/model/account.h
+
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/utils/menu.h
 

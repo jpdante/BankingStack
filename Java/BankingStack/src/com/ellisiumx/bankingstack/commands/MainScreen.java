@@ -63,7 +63,7 @@ public class MainScreen extends Command {
                 break;
             default:
                 MenuUtils.printWindow("Error", new String[] {
-                        "#c&4The option entered is invalid&r",
+                        "#cThe option entered is invalid",
                 });
                 break;
         }

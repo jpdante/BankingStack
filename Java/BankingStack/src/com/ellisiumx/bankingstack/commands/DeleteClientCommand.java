@@ -21,7 +21,7 @@ public class DeleteClientCommand extends Command {
 
         if(client.getValue().getAccounts().size() != 0) {
             MenuUtils.printWindow("Delete Client", new String[] {
-                    "#c&4You must close your accounts before you can delete this user!&r"
+                    "#cYou must close your accounts before you can delete this user!"
             });
             return Error();
         }
@@ -29,7 +29,7 @@ public class DeleteClientCommand extends Command {
         if(!programContext.getClientManager().removeClient(client.getValue())) return Error();
 
         MenuUtils.printWindow("Delete Client", new String[] {
-                "#c&2Client deleted successfully!&r"
+                "#cClient deleted successfully!"
         });
 
         try {
@@ -42,7 +42,7 @@ public class DeleteClientCommand extends Command {
 
     private int Error() {
         MenuUtils.printWindow("Error", new String[]{
-                "#c&4Failed to delete client&r",
+                "#cFailed to delete client",
         });
         return 0;
     }

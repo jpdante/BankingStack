@@ -7,7 +7,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b905da86-33a0-4d5a-87c6-06bd4c55d3b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../C/BankingStack/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C/BankingStack/main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C/BankingStack/manager/account_manager.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C/BankingStack/manager/account_manager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C/BankingStack/manager/client_manager.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C/BankingStack/manager/client_manager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C/BankingStack/model/account.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C/BankingStack/model/client.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C/BankingStack/utils/convert.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C/BankingStack/utils/convert.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C/BankingStack/utils/menu.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C/BankingStack/utils/menu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/Main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/Model/Account.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/model/account.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/Model/Client.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/model/client.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/Utils/MenuUtils.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/Utils/MenuUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/BankingStack.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/BankingStack.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/BankingStack.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/BankingStack.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/Main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/Main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/Utils/MenuUtils.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$StringDirection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils$StringDirection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankingStack/com/ellisiumx/bankingstack/utils/MenuUtils.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,6 +151,8 @@
       <workItem from="1569033919767" duration="1204000" />
       <workItem from="1569101620555" duration="84000" />
       <workItem from="1569276586121" duration="620000" />
+      <workItem from="1569457819609" duration="615000" />
+      <workItem from="1569459142296" duration="5433000" />
     </task>
     <servers />
   </component>

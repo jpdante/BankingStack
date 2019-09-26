@@ -1,3 +1,3 @@
-C:/Users/jpdante/CLionProjects/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir
-C:/Users/jpdante/CLionProjects/BankingStack/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/jpdante/CLionProjects/BankingStack/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/cmake-build-debug/CMakeFiles/BankingStack.dir
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jpdante/Documents/GitHub/BankingStack/C/BankingStack/cmake-build-debug/CMakeFiles/rebuild_cache.dir
