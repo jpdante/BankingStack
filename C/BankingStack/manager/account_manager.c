@@ -61,7 +61,6 @@ char* listAccounts() {
         strcat(message, "Creation Date: ");
         char *tData = tDataToString(account.creationDate);
         strcat(message, tData);
-        free(tData);
         strcat(message, "\n");
         strcat(message, "--------------------");
         strcat(message, "\n\0");

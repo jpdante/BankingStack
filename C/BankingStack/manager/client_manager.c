@@ -67,7 +67,7 @@ char* listClients() {
 
 int hasCPF(char cpf[]) {
     for(int i = 0; i < clientsSize; i++) {
-        if(clients[i].cpf == cpf) {
+        if(!strcmp(clients[i].cpf, cpf)) {
             return 1;
         }
     }

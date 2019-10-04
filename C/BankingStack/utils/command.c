@@ -1,6 +1,7 @@
 #include "command.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 #include "menu.h"
 #include "../manager/client_manager.h"
 #include "../manager/account_manager.h"
@@ -11,14 +12,14 @@ void processCreateClient() {
     TClient client;
     client.id = getNextClientID();
     printf("ID: %i\n", client.id);
-    if(!readString("Name: ", client.name)) return;
-    if(!readString("CPF: ", client.cpf)) return;
+    if(!readString("Name: ", &client.name)) return;
+    if(!readString("CPF: ", &client.cpf)) return;
     if(hasCPF(client.cpf)) {
         char *screen[1]={ "There is already a customer with this CPF!" };
         menuPrintWindowLeft(NULL, screen, sizeof(screen)/sizeof(screen[0]), NULL);
         return;
     }
-    if(!readString("Phone: ", client.phone)) return;
+    if(!readString("Phone: ", &client.phone)) return;
     addClient(client);
 }
 
@@ -28,7 +29,17 @@ void processCreateAccount() {
     TAccount account;
     account.id = getNextAccountID();
     printf("ID: %i\n", account.id);
-    if(!readClient("Client ID: ", &account.client)) return;
+    TClient client;
+    if(!readClient("Client ID: ", &client)) return;
+    account.client = client;
+    account.balance = 0;
+    account.active = 1;
+    time_t now;
+    time(&now);
+    struct tm *local = localtime(&now);
+    account.creationDate.day =local->tm_mday;
+    account.creationDate.month =local->tm_mon + 1;
+    account.creationDate.year =local->tm_year + 1900;
     addAccount(account);
 }
 
@@ -132,8 +143,9 @@ int readClient(char info[], TClient *response) {
     printf(info);
     int id;
     if(scanf("%i", &id)) {
-        response = getClient(id);
+        TClient *client = getClient(id);
         if(response) {
+            *response = *client;
             return 1;
         } else {
             char *screen[1]={ "Client not found!" };
