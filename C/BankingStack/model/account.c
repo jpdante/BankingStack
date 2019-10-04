@@ -42,4 +42,5 @@ void accountPrint(TAccount account) {
     strcat(screen[3], sDate);
     free(sDate);
     menuPrintWindowLeft("Account", screen, sizeof(screen)/sizeof(screen[0]), NULL);
+    free(screen);
 }

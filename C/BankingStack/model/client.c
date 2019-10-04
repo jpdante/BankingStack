@@ -19,4 +19,5 @@ void printClient(TClient client) {
     strcat(screen[2], client.cpf);
     strcat(screen[3], client.phone);
     menuPrintWindowLeft("Client", screen, sizeof(screen)/sizeof(screen[0]), NULL);
+    free(screen);
 }

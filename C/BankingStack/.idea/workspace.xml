@@ -12,10 +12,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e14c1d8-5b42-4512-9d82-0b58bd39f472" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/utils/command.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/command.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/account_manager.c" beforeDir="false" afterPath="$PROJECT_DIR$/manager/account_manager.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/account_manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/manager/account_manager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/client_manager.c" beforeDir="false" afterPath="$PROJECT_DIR$/manager/client_manager.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/client_manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/manager/client_manager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/account.c" beforeDir="false" afterPath="$PROJECT_DIR$/model/account.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/client.c" beforeDir="false" afterPath="$PROJECT_DIR$/model/client.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/client.h" beforeDir="false" afterPath="$PROJECT_DIR$/model/client.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/menu.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils/menu.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +34,7 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+    <option name="clangWarnings" value="-Wno-unused-variable,-Werror=implicit-function-declaration,-Wshadow,-Wno-shadow-field-in-constructor-modified,-Wno-shadow-ivar,-Wno-implicit-function-declaration" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
@@ -82,6 +92,7 @@
       <workItem from="1569516872452" duration="613000" />
       <workItem from="1569939321764" duration="100000" />
       <workItem from="1569939631814" duration="1668000" />
+      <workItem from="1570190360484" duration="8239000" />
     </task>
     <servers />
   </component>

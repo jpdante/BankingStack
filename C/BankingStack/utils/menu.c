@@ -62,7 +62,7 @@ void menuPrintHeader(char *header, int windowSize) {
         printf("%c\n", HeadRightChar);
     } else {
         printf("%c", HeadLeftChar);
-        for (int i = 0; i < windowSize; i++) {
+        for (int i = 0; i < windowSize + 2; i++) {
             printf("%c", HorizontalChar);
         }
         printf("%c\n", HeadRightChar);

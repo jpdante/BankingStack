@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 #include "utils/menu.h"
+#include "utils/command.h"
 
 int isRunning = 1;
 
@@ -16,15 +18,14 @@ int main() {
 }
 
 int mainScreen() {
-    char *screen[10]={
+    char *screen[9]={
             "           Welcome to BankingStack",
             "",
-            "1. Create client        !  7. Deposit",
-            "2. Create account       !  8. Withdraw",
-            "3. List clients         !  9. Transfer",
-            "4. List accounts        ! 10. Delete account",
-            "5. List client accounts ! 11. Delete client",
-            "6. Search client        !",
+            "1. Create client        !  6. Deposit",
+            "2. Create account       !  7. Withdraw",
+            "3. List clients         !  8. Transfer",
+            "4. List accounts        !",
+            "5. Search account       !",
             "0. Exit",
             ""
     };
@@ -35,26 +36,28 @@ int mainScreen() {
         case 0:
             return 1;
         case 1:
+            processCreateClient();
             break;
         case 2:
+            processCreateAccount();
             break;
         case 3:
+            processListClients();
             break;
         case 4:
+            processListAccounts();
             break;
         case 5:
+            processSearchAccount();
             break;
         case 6:
+            processDeposit();
             break;
         case 7:
+            processWithdraw();
             break;
         case 8:
-            break;
-        case 9:
-            break;
-        case 10:
-            break;
-        case 11:
+            processTransfer();
             break;
         default:
             break;

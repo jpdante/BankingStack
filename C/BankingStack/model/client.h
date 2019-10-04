@@ -3,7 +3,7 @@
 
 typedef struct client {
     int id;
-    char name[30];
+    char name[10];
     char cpf[11];
     char phone[10];
 }TClient;

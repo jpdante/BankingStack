@@ -6,5 +6,6 @@
 void addClient(TClient client);
 char* listClients();
 int hasCPF();
+int getNextClientID();
 
 #endif //BANKINGSTACK_CLIENT_MANAGER_H
