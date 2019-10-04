@@ -5,7 +5,7 @@
 #include <string.h>
 
 TClient *clients;
-int size = 0;
+int clientsSize = 0;
 /*
  * 'ID: '    + int(String) + LineBreak = sizeof(char) * 4 + sizeof(char) * 12 + sizeof(char) * 1
  * 'Name: '  + String + LineBreak = sizeof(char) * 6 + sizeof(char) * 10 + sizeof(char) * 1
@@ -13,7 +13,7 @@ int size = 0;
  * 'Phone: ' + String + LineBreak = sizeof(char) * 7 + sizeof(char) * 10 + sizeof(char) * 1
  * '--------------------' + LineBreak + \0 = sizeof(char) * 20 + sizeof(char) * 1
  */
-const int stringSize =
+const int clientStringSize =
         sizeof(char) * 4 + sizeof(char) * 12 + sizeof(char) * 1 +
         sizeof(char) * 6 + sizeof(char) * 10 + sizeof(char) * 1 +
         sizeof(char) * 5 + sizeof(char) * 11 + sizeof(char) * 1 +
@@ -22,19 +22,28 @@ const int stringSize =
 
 void addClient(TClient client) {
     if(clients) {
-        size++;
-        clients = realloc(clients, sizeof(TClient) * size);
+        clientsSize++;
+        clients = realloc(clients, sizeof(TClient) * clientsSize);
     } else {
-        size = 1;
-        clients = malloc(sizeof(TClient) * size);
+        clientsSize = 1;
+        clients = malloc(sizeof(TClient) * clientsSize);
     }
-    clients[size - 1] = client;
+    clients[clientsSize - 1] = client;
+}
+
+TClient* getClient(int id) {
+    for(int i = 0; i < clientsSize; i++) {
+        if(clients[i].id == id) {
+            return &clients[i];
+        }
+    }
+    return NULL;
 }
 
 char* listClients() {
-    char *message = malloc(stringSize * size);
+    char *message = malloc(clientStringSize *clientsSize);
     strcpy(message, "");
-    for(int i = 0; i < size; i++) {
+    for(int i = 0; i < clientsSize; i++) {
         TClient client = clients[i];
         strcat(message, "ID: ");
         char *id = intToString(client.id);
@@ -57,7 +66,7 @@ char* listClients() {
 }
 
 int hasCPF(char cpf[]) {
-    for(int i = 0; i < size; i++) {
+    for(int i = 0; i < clientsSize; i++) {
         if(clients[i].cpf == cpf) {
             return 1;
         }
@@ -66,5 +75,5 @@ int hasCPF(char cpf[]) {
 }
 
 int getNextClientID() {
-    return size + 1;
+    return clientsSize + 1;
 }

@@ -7,6 +7,7 @@
 int isRunning = 1;
 
 int main() {
+    setbuf(stdout, 0);
     while(isRunning) {
         int response = mainScreen();
         if(response) {

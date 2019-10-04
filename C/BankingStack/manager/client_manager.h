@@ -4,6 +4,7 @@
 #include "../model/client.h"
 
 void addClient(TClient client);
+TClient* getClient(int id);
 char* listClients();
 int hasCPF();
 int getNextClientID();

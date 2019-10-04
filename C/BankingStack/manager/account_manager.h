@@ -6,7 +6,8 @@
 void addAccount(TAccount account);
 char* listAccounts();
 char* searchAccount(int id);
-TAccount getAccount(int id);
+TAccount* getAccount(int id);
 int removeAccount(int id);
+int getNextAccountID();
 
 #endif //BANKINGSTACK_ACCOUNT_MANAGER_H

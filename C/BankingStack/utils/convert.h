@@ -6,7 +6,7 @@
 char* intToString(int i);
 char* intToYesNo(int i);
 
-char* doubleToString(double d);
+char* floatToString(float f);
 
 char* tDataToString(TDate date);
 

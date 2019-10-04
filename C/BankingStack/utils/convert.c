@@ -18,9 +18,9 @@ char* intToYesNo(int i) {
     return "No";
 }
 
-char* doubleToString(double d) {
-    char *str = malloc(sizeof (char) * 50);
-    sprintf(str, "%f", d);
+char* floatToString(float f) {
+    char *str = malloc(sizeof (char) * 25);
+    sprintf(str, "%f", f);
     return str;
 }
 

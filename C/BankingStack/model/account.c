@@ -35,12 +35,11 @@ void accountPrint(TAccount account) {
     char *sActive = intToYesNo(account.active);
     strcat(screen[1], sActive);
     free(sActive);
-    char *sBalance = doubleToString(account.balance);
+    char *sBalance = floatToString(account.balance);
     strcat(screen[2], sBalance);
     free(sBalance);
     char *sDate = tDataToString(account.creationDate);
     strcat(screen[3], sDate);
     free(sDate);
     menuPrintWindowLeft("Account", screen, sizeof(screen)/sizeof(screen[0]), NULL);
-    free(screen);
 }
