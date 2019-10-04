@@ -37,6 +37,7 @@ char* listAccounts() {
     char *message = malloc(accountStringSize * accountsSize);
     strcpy(message, "");
     for(int i = 0; i < accountsSize; i++) {
+        accounts[i].balance += 40;
         TAccount account = accounts[i];
         strcat(message, "ID: ");
         char *id = intToString(account.id);
