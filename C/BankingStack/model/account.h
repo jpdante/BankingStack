@@ -16,9 +16,9 @@ typedef struct account {
     int active;
 }TAccount;
 
-void deposit(TAccount account, float amount);
-int debit(TAccount account, float amount);
-int transfer(TAccount from, TAccount to, float amount);
-void printAccount(TAccount account);
+int accountDeposit(TAccount account, float amount);
+int accountWithdraw(TAccount account, float amount);
+int accountTransfer(TAccount from, TAccount to, float amount);
+void accountPrint(TAccount account);
 
 #endif //BANKINGSTACK_ACCOUNT_H

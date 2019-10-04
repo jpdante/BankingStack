@@ -5,11 +5,13 @@
 #include "../utils/menu.h"
 #include "../utils/convert.h"
 
-void accountDeposit(TAccount account, float amount) {
+int accountDeposit(TAccount account, float amount) {
+    if(amount < 0.0f) return 0;
     account.balance += amount;
+    return 1;
 }
 
-int accountDebit(TAccount account, float amount) {
+int accountWithdraw(TAccount account, float amount) {
     if(account.balance - amount < -1000) return 0;
     account.balance -= amount;
     return 1;

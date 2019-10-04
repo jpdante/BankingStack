@@ -48,15 +48,53 @@ void processSearchAccount() {
 }
 
 void processDeposit() {
-
+    char *screen[1]={ "Deposit" };
+    menuPrintWindowCenter(NULL, screen, sizeof(screen)/sizeof(screen[0]), NULL);
+    TAccount *account;
+    if(!readAccount("Account ID: ", account)) return;
+    float amount;
+    if(!readFloat("Amount: ", &amount)) return;
+    if(accountDeposit(*account, amount)) {
+        char *screen[1]={ "Deposit made successfully!" };
+        menuPrintWindowCenter(NULL, screen, sizeof(screen)/sizeof(screen[0]), NULL);
+    } else {
+        char *screen[1]={ "Failed to make deposit!" };
+        menuPrintWindowCenter(NULL, screen, sizeof(screen)/sizeof(screen[0]), NULL);
+    }
 }
 
 void processWithdraw() {
-
+    char *screen[1]={ "Withdraw" };
+    menuPrintWindowCenter(NULL, screen, sizeof(screen)/sizeof(screen[0]), NULL);
+    TAccount *account;
+    if(!readAccount("Account ID: ", account)) return;
+    float amount;
+    if(!readFloat("Amount: ", &amount)) return;
+    if(accountWithdraw(*account, amount)) {
+        char *screen[1]={ "Withdrawal successfully!" };
+        menuPrintWindowCenter(NULL, screen, sizeof(screen)/sizeof(screen[0]), NULL);
+    } else {
+        char *screen[1]={ "Failed to perform withdrawal!" };
+        menuPrintWindowCenter(NULL, screen, sizeof(screen)/sizeof(screen[0]), NULL);
+    }
 }
 
 void processTransfer() {
-
+    char *screen[1]={ "Transfer" };
+    menuPrintWindowCenter(NULL, screen, sizeof(screen)/sizeof(screen[0]), NULL);
+    TAccount *from;
+    if(!readAccount("From Account ID: ", from)) return;
+    TAccount *to;
+    if(!readAccount("From Account ID: ", to)) return;
+    float amount;
+    if(!readFloat("Amount: ", &amount)) return;
+    if(accountTransfer(*from, *to, amount)) {
+        char *screen[1]={ "Transfer completed successfully!" };
+        menuPrintWindowCenter(NULL, screen, sizeof(screen)/sizeof(screen[0]), NULL);
+    } else {
+        char *screen[1]={ "Failed to perform transfer!" };
+        menuPrintWindowCenter(NULL, screen, sizeof(screen)/sizeof(screen[0]), NULL);
+    }
 }
 
 int readAccount(char info[], TAccount *response) {
