@@ -8,6 +8,6 @@ typedef struct client {
     char phone[10];
 }TClient;
 
-void printClient(TClient client);
+void clientPrint(TClient client);
 
 #endif //BANKINGSTACK_CLIENT_H

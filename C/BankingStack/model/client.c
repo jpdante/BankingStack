@@ -5,7 +5,7 @@
 #include "../utils/menu.h"
 #include "../utils/convert.h"
 
-void printClient(TClient client) {
+void clientPrint(TClient client) {
     char *screen[4]={
             "ID: "
             "Nome: ",

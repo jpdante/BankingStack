@@ -70,7 +70,40 @@ char* listAccounts() {
 }
 
 char* searchAccount(int id) {
-    return "";
+    char *message = malloc(accountStringSize);
+    strcpy(message, "");
+    TAccount *accountPtr = getAccount(id);
+    if(accountPtr) {
+        TAccount account = *accountPtr;
+        strcat(message, "ID: ");
+        char *id = intToString(account.id);
+        strcat(message, id);
+        free(id);
+        strcat(message, "\n");
+        strcat(message, "Client ID: ");
+        char *clientID = intToString(account.client.id);
+        strcat(message, clientID);
+        free(clientID);
+        strcat(message, "\n");
+        strcat(message, "Active: ");
+        char *active = intToString(account.active);
+        strcat(message, active);
+        free(active);
+        strcat(message, "\n");
+        strcat(message, "Balance: ");
+        char *balance = floatToString(account.balance);
+        strcat(message, balance);
+        free(balance);
+        strcat(message, "\n");
+        strcat(message, "Creation Date: ");
+        char *tData = tDataToString(account.creationDate);
+        strcat(message, tData);
+        free(tData);
+        strcat(message, "\n");
+        strcat(message, "--------------------");
+        strcat(message, "\n\0");
+    }
+    return message;
 }
 
 TAccount* getAccount(int id) {

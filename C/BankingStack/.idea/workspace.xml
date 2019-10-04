@@ -13,8 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5e14c1d8-5b42-4512-9d82-0b58bd39f472" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/account.c" beforeDir="false" afterPath="$PROJECT_DIR$/model/account.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/account.h" beforeDir="false" afterPath="$PROJECT_DIR$/model/account.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/client.c" beforeDir="false" afterPath="$PROJECT_DIR$/model/client.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/client.h" beforeDir="false" afterPath="$PROJECT_DIR$/model/client.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/command.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils/command.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,7 +84,7 @@
       <workItem from="1569516872452" duration="613000" />
       <workItem from="1569939321764" duration="100000" />
       <workItem from="1569939631814" duration="1668000" />
-      <workItem from="1570190360484" duration="14346000" />
+      <workItem from="1570190360484" duration="14769000" />
     </task>
     <servers />
   </component>

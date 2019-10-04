@@ -13,6 +13,11 @@ void processCreateClient() {
     printf("ID: %i\n", client.id);
     if(!readString("Name: ", client.name)) return;
     if(!readString("CPF: ", client.cpf)) return;
+    if(hasCPF(client.cpf)) {
+        char *screen[1]={ "There is already a customer with this CPF!" };
+        menuPrintWindowLeft(NULL, screen, sizeof(screen)/sizeof(screen[0]), NULL);
+        return;
+    }
     if(!readString("Phone: ", client.phone)) return;
     addClient(client);
 }
@@ -44,7 +49,10 @@ void processListAccounts() {
 }
 
 void processSearchAccount() {
-
+    int id;
+    if(!readFloat("Account ID: ", &id)) return;
+    char *msg = searchAccount(id);
+    printf("%s", msg);
 }
 
 void processDeposit() {
