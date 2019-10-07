@@ -69,11 +69,11 @@ void processSearchAccount() {
 void processDeposit() {
     char *screen[1]={ "Deposit" };
     menuPrintWindowCenter(NULL, screen, sizeof(screen)/sizeof(screen[0]), NULL);
-    TAccount account;
-    if(!readAccount("Account ID: ", &account)) return;
+    TAccount **account;
+    if(!readAccount("Account ID: ", account)) return;
     float amount;
     if(!readFloat("Amount: ", &amount)) return;
-    if(accountDeposit(account, amount)) {
+    if(accountDeposit(**account, amount)) {
         char *screen[1]={ "Deposit made successfully!" };
         menuPrintWindowCenter(NULL, screen, sizeof(screen)/sizeof(screen[0]), NULL);
     } else {
@@ -116,13 +116,14 @@ void processTransfer() {
     }
 }
 
-int readAccount(char info[], TAccount *response) {
+int readAccount(char info[], TAccount **response) {
     printf(info);
     int id;
     if(scanf("%i", &id)) {
         TAccount *account = getAccount(id);
-        if(response) {
-            *response = *account;
+        if(account) {
+            response = &account;
+            account->balance = 50;
             return 1;
         } else {
             char *screen[1]={ "Account not found!" };

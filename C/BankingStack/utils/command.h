@@ -12,7 +12,7 @@ void processSearchAccount();
 void processDeposit();
 void processWithdraw();
 void processTransfer();
-int readAccount(char info[], TAccount *response);
+int readAccount(char info[], TAccount **response);
 int readClient(char info[], TClient *response);
 int readString(char info[], char *response);
 int readFloat(char info[], float *response);
