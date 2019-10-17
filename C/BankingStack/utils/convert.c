@@ -20,7 +20,7 @@ char* intToYesNo(int i) {
 
 char* floatToString(double d) {
     char *str = malloc(sizeof (char) * 50);
-    sprintf(str, "%f", d);
+    sprintf(str, "%.2f", d);
     return str;
 }
 

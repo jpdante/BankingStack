@@ -12,10 +12,12 @@ void processSearchAccount();
 void processDeposit();
 void processWithdraw();
 void processTransfer();
-int readAccount(char info[], TAccount **response);
-int readClient(char info[], TClient *response);
-int readString(char info[], char *response);
+TAccount* readAccount(char info[]);
+TClient* readClient(char info[]);
+int readString(char info[], char *response, int count);
 int readFloat(char info[], float *response);
+int readInt(char info[], int *response);
 int tryAgain();
+void flush_in();
 
 #endif //BANKINGSTACK_COMMAND_H
