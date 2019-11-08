@@ -3,6 +3,7 @@ package com.ellisiumx.bankingstack.commands;
 import com.ellisiumx.bankingstack.Main;
 import com.ellisiumx.bankingstack.model.Account;
 import com.ellisiumx.bankingstack.utils.CommandUtils;
+import com.ellisiumx.bankingstack.utils.ConversionUtils;
 import com.ellisiumx.bankingstack.utils.MenuUtils;
 import javafx.util.Pair;
 
@@ -22,7 +23,7 @@ public class DepositCommand extends Command {
 
         if(account.getValue().addFunds(amount.getValue())) {
             MenuUtils.printWindow("Deposit", new String[] {
-                    "#c$" + amount + " successfully deposited!"
+                    "#c$" + ConversionUtils.doubleToString(amount.getValue()) + " successfully deposited!"
             });
         } else {
             MenuUtils.printWindow("Deposit", new String[] {

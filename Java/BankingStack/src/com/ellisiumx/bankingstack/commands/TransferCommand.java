@@ -3,6 +3,7 @@ package com.ellisiumx.bankingstack.commands;
 import com.ellisiumx.bankingstack.Main;
 import com.ellisiumx.bankingstack.model.Account;
 import com.ellisiumx.bankingstack.utils.CommandUtils;
+import com.ellisiumx.bankingstack.utils.ConversionUtils;
 import com.ellisiumx.bankingstack.utils.MenuUtils;
 import javafx.util.Pair;
 
@@ -30,7 +31,7 @@ public class TransferCommand extends Command {
 
         if(from.getValue().removeFunds(amount.getValue()) && to.getValue().addFunds(amount.getValue())) {
             MenuUtils.printWindow("Transfer", new String[] {
-                    "#cSuccessful transfer!"
+                    "#c$" + ConversionUtils.doubleToString(amount.getValue()) + " Successful transfer!"
             });
         } else {
             MenuUtils.printWindow("Transfer", new String[] {

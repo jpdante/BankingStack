@@ -1,6 +1,10 @@
 package com.ellisiumx.bankingstack.utils;
 
+import java.text.DecimalFormat;
+
 public class ConversionUtils {
+
+    private static DecimalFormat df2 = new DecimalFormat("#.##");
 
     public static int[] stringToIntArray(String data) {
         int[] array = new int[data.length()];
@@ -19,6 +23,10 @@ public class ConversionUtils {
             return new IntConversionResponse(true, Integer.parseInt(data));
         } catch(Exception e) { }
         return new IntConversionResponse(false, 0);
+    }
+
+    public static String doubleToString(double value) {
+        return df2.format(value);
     }
 
     public static String cpfToString(String cpf) {

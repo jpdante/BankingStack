@@ -3,6 +3,7 @@ package com.ellisiumx.bankingstack.commands;
 import com.ellisiumx.bankingstack.Main;
 import com.ellisiumx.bankingstack.model.Account;
 import com.ellisiumx.bankingstack.utils.CommandUtils;
+import com.ellisiumx.bankingstack.utils.ConversionUtils;
 import com.ellisiumx.bankingstack.utils.MenuUtils;
 import javafx.util.Pair;
 
@@ -22,7 +23,7 @@ public class WithdrawCommand extends Command {
 
         if(account.getValue().removeFunds(amount.getValue())) {
             MenuUtils.printWindow("Withdraw", new String[] {
-                    "#c$" + amount + " successfully withdrawn!"
+                    "#c$" + ConversionUtils.doubleToString(amount.getValue()) + " successfully withdrawn!"
             });
         } else {
             MenuUtils.printWindow("Withdraw", new String[] {

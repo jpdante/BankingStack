@@ -23,7 +23,7 @@ public class Main {
     private ClientManager clientManager;
 
     private void Run(String[] args) {
-        this.isRunning = true;
+        isRunning = true;
         this.consoleScanner = new Scanner(System.in);
         this.mainWindow = new MainScreen(this);
         this.databaseManager = new DatabaseManager(Paths.get(System.getProperty("user.dir"), "db.bin"));
@@ -38,12 +38,12 @@ public class Main {
     }
 
     private void CommandLoop() {
-        while(this.isRunning) {
+        while(isRunning) {
             this.mainWindow.Run();
         }
     }
 
-    public void Exit() { this.isRunning = false; }
+    public void Exit() { isRunning = false; }
 
     public Scanner getConsoleScanner() { return this.consoleScanner; }
 

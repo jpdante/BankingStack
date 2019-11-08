@@ -26,11 +26,13 @@ public class CreateAccountCommand extends Command {
         MenuUtils.printWindow(new String[]{"Create Account"});
         Pair<Boolean, Client> client = CommandUtils.GetClient(this.programContext);
         if(!client.getKey()) return Error();
-        Pair<Boolean, Double> limit = CommandUtils.GetLimit(this.programContext.getConsoleScanner());
-        if(!limit.getKey()) return Error();
-
-        if(CommandUtils.GetSpecialAccount(this.programContext.getConsoleScanner())) account = new SpecialAccount(GetID(), client.getValue(), new Date(), limit.getValue());
-        else account = new Account(GetID(), client.getValue(), new Date());
+        if(CommandUtils.GetIsSpecialAccount(this.programContext.getConsoleScanner())) {
+            Pair<Boolean, Double> limit = CommandUtils.GetLimit(this.programContext.getConsoleScanner());
+            if(!limit.getKey()) return Error();
+            account = new SpecialAccount(GetID(), client.getValue(), new Date(), limit.getValue());
+        }  else {
+            account = new Account(GetID(), client.getValue(), new Date());
+        }
         if(!account.getClient().addAccount(account)) return Error();
 
         if(account instanceof SpecialAccount) {

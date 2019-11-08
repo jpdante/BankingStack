@@ -1,6 +1,7 @@
 package com.ellisiumx.bankingstack.commands;
 
 import com.ellisiumx.bankingstack.Main;
+import com.ellisiumx.bankingstack.utils.ConversionUtils;
 import com.ellisiumx.bankingstack.utils.MenuUtils;
 
 public class MainScreen extends Command {
@@ -22,9 +23,21 @@ public class MainScreen extends Command {
                 "#l0. Exit",
                 "",
         }, "Enter one of the options above");
-        int option = this.programContext.getConsoleScanner().nextInt();
-        this.programContext.getConsoleScanner().nextLine();
-        switch (option) {
+        boolean continueRead = true;
+        ConversionUtils.IntConversionResponse response = null;
+        do {
+            String data = this.programContext.getConsoleScanner().nextLine();
+            if(data == null || data.length() == 0) continue;
+            response = ConversionUtils.stringToInt(data);
+            if(!response.isSuccess()) {
+                MenuUtils.printWindow("Error", new String[]{
+                        "#cFailed to parse input",
+                });
+                continue;
+            }
+            continueRead = false;
+        } while(continueRead);
+        switch (response.getResult()) {
             case 1:
                 new CreateClientCommand(this.programContext).Run();
                 break;

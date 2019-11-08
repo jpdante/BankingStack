@@ -62,7 +62,7 @@ public class CommandUtils {
     public static Pair<Boolean, String> GetCPF(Scanner scanner) {
         while (Main.IsRunning()) {
             System.out.print("CPF: ");
-            String data = scanner.nextLine();
+            String data = scanner.nextLine().replace(".", "").replace("-", "");
             if (data.length() <= 0 || !VerificationUtils.validateCPF(data)) {
                 MenuUtils.printWindow("Error", new String[]{
                         "#cInvalid cpf",
@@ -175,7 +175,7 @@ public class CommandUtils {
         }
     }
 
-    public static boolean GetSpecialAccount(Scanner scanner) {
+    public static boolean GetIsSpecialAccount(Scanner scanner) {
         while (Main.IsRunning()) {
             System.out.print("Is Special Account ? (y/n) ");
             char option = scanner.next().charAt(0);

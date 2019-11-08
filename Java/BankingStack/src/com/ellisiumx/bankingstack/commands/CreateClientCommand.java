@@ -3,6 +3,7 @@ package com.ellisiumx.bankingstack.commands;
 import com.ellisiumx.bankingstack.Main;
 import com.ellisiumx.bankingstack.model.Client;
 import com.ellisiumx.bankingstack.utils.CommandUtils;
+import com.ellisiumx.bankingstack.utils.ConversionUtils;
 import com.ellisiumx.bankingstack.utils.MenuUtils;
 import javafx.util.Pair;
 
@@ -38,7 +39,7 @@ public class CreateClientCommand extends Command {
                 "#l First Name: " + client.getFirstName(),
                 "#l Last Name: " + client.getLastName(),
                 "#l Phone: " + client.getPhone(),
-                "#l CPF: " + client.getCPF()
+                "#l CPF: " + ConversionUtils.cpfToString(client.getCPF())
         });
         try {
             this.programContext.getDatabaseManager().SaveClients(this.programContext.getClientManager().getClients());

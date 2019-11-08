@@ -6,21 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b905da86-33a0-4d5a-87c6-06bd4c55d3b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../C/BankingStack/utils/command.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C/BankingStack/utils/command.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/manager/account_manager.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/manager/account_manager.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/manager/account_manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/manager/account_manager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/manager/client_manager.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/manager/client_manager.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/manager/client_manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/manager/client_manager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/model/account.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/model/account.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/model/client.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/model/client.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/model/client.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/model/client.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b905da86-33a0-4d5a-87c6-06bd4c55d3b8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
