@@ -5,3 +5,20 @@ tanto para NetBeans quanto para Intellij IDEA.
 O NetBeans precisa de algumas configurações meio chatas para rodar em UTF-8 e mostrar os caracteres
 do menu corretamente, ja o Intellij IDEA já vem com UTF-8 por padrão, somente esse pequeno problema
 acontece no NetBeans, de resto o projeto funciona perfeitamente.
+
+Abaixo seguem packs para ajudar a testar os clientes, ja que existe a validacao do CPF e do numero
+do celular/telefone
+
+Pack de CPF's:
+665.698.054-60
+185.986.713-80
+653.918.597-94
+855.790.772-97
+096.373.064-98
+
+Pack de Numeros de Telefone:
++55 63 28361121
++55 53 25526435
++55 47 36223278
++55 98 35852607
++55 63 25402055
