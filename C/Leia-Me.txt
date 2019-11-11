@@ -1,0 +1,1 @@
+O projeto funciona nas duas IDE's perfeitamente, nao existe recomendacao neste caso.

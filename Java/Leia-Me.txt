@@ -1,0 +1,7 @@
+Professores nós recomendamos usar o Intellij IDEA para rodar o projeto, como o documento
+da APS pedia que os projetos fossem entregues em NetBeans nós adicionamos os dois projetos,
+tanto para NetBeans quanto para Intellij IDEA.
+
+O NetBeans precisa de algumas configurações meio chatas para rodar em UTF-8 e mostrar os caracteres
+do menu corretamente, ja o Intellij IDEA já vem com UTF-8 por padrão, somente esse pequeno problema
+acontece no NetBeans, de resto o projeto funciona perfeitamente.

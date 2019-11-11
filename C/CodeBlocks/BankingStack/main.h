@@ -1,0 +1,4 @@
+#ifndef BANKINGSTACK_MAIN_H
+#define BANKINGSTACK_MAIN_H
+int mainScreen();
+#endif //BANKINGSTACK_MAIN_H
