@@ -12,13 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e14c1d8-5b42-4512-9d82-0b58bd39f472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/account.c" beforeDir="false" afterPath="$PROJECT_DIR$/model/account.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/account.h" beforeDir="false" afterPath="$PROJECT_DIR$/model/account.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/account_manager.c" beforeDir="false" afterPath="$PROJECT_DIR$/manager/account_manager.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/client_manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/manager/client_manager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/command.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils/command.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/command.h" beforeDir="false" afterPath="$PROJECT_DIR$/utils/command.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/convert.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils/convert.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/BankingStack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/BankingStack/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/CLionProjects/untitled2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
@@ -96,6 +94,7 @@
       <workItem from="1571236777638" duration="2406000" />
       <workItem from="1571326659023" duration="60000" />
       <workItem from="1571326899091" duration="5716000" />
+      <workItem from="1573491256848" duration="2353000" />
     </task>
     <servers />
   </component>

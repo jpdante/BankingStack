@@ -111,6 +111,7 @@ TAccount* getAccount(int id) {
             return &accounts[i];
         }
     }
+    return NULL;
 }
 
 int removeAccount(int id) {

@@ -14,14 +14,20 @@ void processCreateClient() {
     TClient client;
     client.id = getNextClientID();
     printf("ID: %i\n", client.id);
-    if(!readString("Name: ", &client.name, 10)) return;
-    if(!readString("CPF: ", &client.cpf, 11)) return;
+    char name[10];
+    char cpf[11];
+    char phone[10];
+    if(!readString("Name: ", name, 10)) return;
+    strcpy(client.name, name);
+    if(!readString("CPF: ", cpf, 11)) return;
+    strcpy(client.cpf, cpf);
     if(hasCPF(client.cpf)) {
         char *screen2[1]={ "There is already a customer with this CPF!" };
         menuPrintWindowLeft(NULL, screen2, sizeof(screen2)/sizeof(screen2[0]), NULL);
         return;
     }
-    if(!readString("Phone: ", &client.phone, 10)) return;
+    if(!readString("Phone: ", phone, 10)) return;
+    strcpy(client.phone, phone);
     addClient(client);
 }
 
@@ -105,8 +111,13 @@ void processTransfer() {
     menuPrintWindowCenter(NULL, screen, sizeof(screen)/sizeof(screen[0]), NULL);
     TAccount *from = readAccount("From Account ID: ");
     if(!from) return;
-    TAccount *to = readAccount("From Account ID: ");
+    TAccount *to = readAccount("To Account ID: ");
     if(!to) return;
+    if(from->id == to->id) {
+        char *screen2[1]={ "You cannot transfer to yourself, failed to perform transfer!" };
+        menuPrintWindowCenter(NULL, screen2, sizeof(screen2)/sizeof(screen2[0]), NULL);
+        return;
+    }
     float amount;
     if(!readFloat("Amount: ", &amount)) return;
     if(accountTransfer(from, to, amount)) {

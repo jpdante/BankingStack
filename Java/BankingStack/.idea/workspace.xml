@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b905da86-33a0-4d5a-87c6-06bd4c55d3b8" name="Default Changelist" comment="" />
+    <list default="true" id="b905da86-33a0-4d5a-87c6-06bd4c55d3b8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../C/BankingStack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/BankingStack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +35,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -106,6 +109,8 @@
       <workItem from="1569459142296" duration="5433000" />
       <workItem from="1569471830250" duration="57000" />
       <workItem from="1570195219587" duration="614000" />
+      <workItem from="1573491151530" duration="52000" />
+      <workItem from="1573491218433" duration="480000" />
     </task>
     <servers />
   </component>
